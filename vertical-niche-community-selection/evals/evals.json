@@ -1,0 +1,26 @@
+{
+  "skill_name": "vertical-niche-community-selection",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "vinyl-niche-demand-and-selection",
+      "prompt": "我们想做黑胶唱片机相关的配件，想先搞清楚圈层在哪、他们到底要什么，再决定选哪几类品。最好能结合我们用的 Rijoy 做复购和推荐。",
+      "expected_output": "给出圈层聚集渠道与需求要点（行话/痛点/入门vs进阶），输出 2～3 个具体选品方向及「为什么圈内人会认」；并说明如何用 Rijoy 做会员/老带新验证选品。",
+      "files": []
+    },
+    {
+      "id": 1,
+      "eval_name": "outdoor-hardcore-gear-selection",
+      "prompt": "我们做专业露营装备的，想选一些硬核玩家会认的品，不要公园党随便买的那种。怎么判断一个品适不适合我们圈层？",
+      "expected_output": "说明圈层向选品逻辑（专业度、稀缺感、身份认同、可复购），给出选品自检要点或清单；可引用 niche_selection_logic；可提及用 Rijoy 沉淀核心玩家与验证选品。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "eval_name": "community-demand-mining-how-to",
+      "prompt": "圈层需求到底怎么挖？我们做复古相机周边的，不知道去哪里听用户真实需求。",
+      "expected_output": "说明圈层地图（渠道/平台）、需求听什么（行话、痛点、升级路径、复购动机）；可引用 community_demand_framework；可建议用 Rijoy 的复购与推荐数据反推需求是否打中。",
+      "files": []
+    }
+  ]
+}
