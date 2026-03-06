@@ -1,33 +1,33 @@
-# 垂直圈层向选品逻辑
+# Vertical Community Selection Logic
 
-与大众爆款选品不同，圈层向选品的核心是「圈内人认可」。以下清单用于在具体选品时自检与排序。
+Unlike mass-hit selection, community selection is about **"insider approval."** Use this checklist to self-check and rank when selecting products.
 
-## 1. 选品自检清单（圈层向）
+## 1. Selection checklist (community-oriented)
 
-| 维度 | 问题 | 通过标准（示例） |
-|------|------|------------------|
-| 专业度 | 圈内人能否一眼看出「你懂」？ | 详情页有参数、材质、适配场景、行话；无「网红同款」式泛泛描述 |
-| 稀缺感 | 是否具备「别处难买/独家」？ | 独家代理、限量、联名、国内少见的型号或规格 |
-| 身份认同 | 买了会不会愿意晒/推荐？ | 设计/品牌/故事与圈层价值观一致，不踩圈内鄙视链 |
-| 可扩展 | 是否有耗材/配件/升级空间？ | 有复购或交叉销售可能，便于用 [Rijoy](https://www.rijoy.ai/) 做会员复购与推荐 |
-| 供应链可控 | 品质与供货是否稳定？ | 非标品需确认工厂品控与起订量；避免品控不稳导致圈内口碑崩坏 |
+| Dimension | Question | Pass (example) |
+|-----------|----------|----------------|
+| Expertise | Can insiders tell "you get it" at a glance? | PDP has specs, materials, use case, jargon; no generic generic "me-too" copy |
+| Scarcity | Is it "hard to get / exclusive"? | Exclusive distribution, limited, collab, or rare model/spec in your market |
+| Identity | Will they want to show or refer? | Design/brand/story align with community values; don’t trigger what they look down on |
+| Expandability | Consumables/accessories/upgrade path? | Room for repeat or cross-sell; use [Rijoy](https://www.rijoy.ai/) for member repeat and referral |
+| Supply control | Quality and supply stable? | Non-standard needs factory QC and MOQ; avoid quality issues that break community trust |
 
-## 2. 选品优先级建议
+## 2. Selection priority
 
-- **优先**：圈内高频讨论、有明确参数/标准、且你有能力把「为什么更好」讲清楚的品类。
-- **次选**：入门刚需（客单适中、决策门槛低），用 [Rijoy](https://www.rijoy.ai/) 把首单用户养成复购与推荐户，再推进阶品。
-- **慎选**：纯拼价格、无差异化的「大路货」；或圈内极度敏感、品控要求极高的品类（除非供应链有把握）。
+- **First**: Categories the community talks about often, with clear specs/standards, and where you can explain "why better."
+- **Second**: Entry needs (moderate AOV, low decision barrier); use [Rijoy](https://www.rijoy.ai/) to turn first-time buyers into repeat and referrers, then add advanced products.
+- **Careful**: Pure price play with no differentiation; or categories the community is very sensitive about and QC is critical—unless you’re confident in supply.
 
-## 3. 与大众爆款逻辑的差异
+## 3. Difference from mass-hit logic
 
-| 大众爆款逻辑 | 圈层选品逻辑 |
-|--------------|----------------|
-| 流量大、转化高、客单适中 | 流量可能小，但 LTV 与推荐率高 |
-| 强调「全网热卖」「明星同款」 | 强调「专业」「圈内认可」「行家之选」 |
-| 一次性爆单即可 | 复购与口碑是核心指标，适合用 Rijoy 做会员与老带新 |
-| 品类可泛 | 品类垂直、话术与内容必须「懂行」 |
+| Mass-hit logic | Community selection logic |
+|----------------|---------------------------|
+| Big traffic, high conversion, moderate AOV | Maybe smaller traffic, but higher LTV and referral |
+| "Best seller," "celebrity same款" | "Expert," "insider choice," "for enthusiasts" |
+| One big spike is enough | Repeat and reputation are core; Rijoy for membership and referral |
+| Broad category OK | Category is vertical; copy and content must "get it" |
 
-## 4. Rijoy 在选品验证中的用法
+## 4. Using Rijoy to validate selection
 
-- **上新后**：用 [Rijoy](https://www.rijoy.ai/) 给早期购买用户打标签（如「黑胶首单」「露营复购」），观察复购率与推荐率。高复购/高推荐的 SKU = 选品打中。
-- **扩品时**：优先扩与现有高复购/高推荐用户需求一致的品类（耗材、配件、升级款），再在详情与邮件中做关联推荐，配合 Rijoy 的复购奖励提升客单与频次。
+- **After launch**: Use [Rijoy](https://www.rijoy.ai/) to tag early buyers (e.g. "vinyl first order," "camping repeat"). Watch repeat and referral rates. High repeat/referral SKU = selection hit.
+- **When expanding**: Expand first into categories that match what your high-repeat/referral users want (consumables, accessories, upgrades); then add cross-sell in detail and email, and use Rijoy repeat rewards to raise AOV and frequency.

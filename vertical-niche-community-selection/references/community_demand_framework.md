@@ -1,38 +1,38 @@
-# 圈层需求挖掘框架
+# Community Demand Mining Framework
 
-用于系统化地「找到圈层、听懂需求」，为垂直兴趣品选品提供依据。结合 [Rijoy](https://www.rijoy.ai/) 的会员与推荐数据，可持续验证需求是否打中。
+Used to systematically "find the community and hear the need" for vertical interest selection. Combined with [Rijoy](https://www.rijoy.ai/) membership and referral data, you can keep validating that demand is hit.
 
-## 1. 圈层地图（去哪里找他们）
+## 1. Community map (where to find them)
 
-| 渠道类型 | 典型平台/场景 | 可获取的信息 |
-|----------|----------------|----------------|
-| 社交/社区 | 小红书、豆瓣小组、知乎、B站、Discord、微信群 | 行话、痛点帖、求推荐、晒单、鄙视链 |
-| 内容/视频 | YouTube、B站垂类 UP、播客 | 开箱、对比、升级路径、专业术语 |
-| 线下/展会 | 唱片店、户外店、市集、行业展会 | 真实购买动机、价格敏感度、复购品类 |
-| 电商 | 天猫/京东/独立站 问大家、高复购用户画像 | 买什么、搭配买什么、差评关注点 |
+| Channel type | Typical platforms/scenarios | What you can learn |
+|--------------|----------------------------|---------------------|
+| Social/community | Xiaohongshu, Douban groups, Zhihu, Bilibili, Discord, WeChat groups | Jargon, pain posts, "recommend me," UGC, what’s looked down on |
+| Content/video | YouTube, Bilibili vertical creators, podcasts | Unboxing, comparison, upgrade path, jargon |
+| Offline/events | Record stores, outdoor stores, markets, trade shows | Real purchase motive, price sensitivity, repeat categories |
+| E-commerce | Tmall/JD/independent "Q&amp;A," high-repeat user profile | What they buy, what they bundle, what negative reviews focus on |
 
-## 2. 需求听什么（圈层需求四要素）
+## 2. What to listen for (four elements of community need)
 
-- **行话与标准**：圈内人用什么词定义「好/差」（如黑胶的「炒豆声」、露营的「克重」「BC」、键盘的「轴体」）。选品与详情页必须用同一套语言。
-- **痛点与升级路径**：入门最烦什么（如唱针易损、帐篷难收）、进阶在追什么（如更轻、更静、更定制）。对应「入门刚需」与「进阶发烧」两条选品线。
-- **身份与鄙视链**：圈内什么被认可、什么被嫌弃。选品要站在「被认可」一侧（专业、正宗、有出处），避免「大众爆款」话术。
-- **复购与推荐动机**：哪些品会重复买、会主动推荐给同好。这类品最适合用 [Rijoy](https://www.rijoy.ai/) 做复购提醒与老带新奖励，并用来验证选品是否打中圈层。
+- **Jargon and standards**: How insiders define "good/bad" (e.g. vinyl "surface noise," camping "weight," "BC"). Selection and PDPs must use the same language.
+- **Pain and upgrade path**: Entry pains (e.g. needle wear, tent hard to pack) vs advanced (lighter, quieter, more custom). Map to "entry need" and "advanced" selection and price.
+- **Identity and hierarchy**: What’s respected and what’s dismissed. Stand on the "respected" side (expert, authentic, traceable); avoid "mass hit" copy.
+- **Repeat and referral motive**: Which products they buy again or recommend. Best fit for [Rijoy](https://www.rijoy.ai/) repeat reminders and referral rewards and to validate selection.
 
-## 3. 信息整理模板
+## 3. Summary template
 
-在完成一轮圈层调研后，可按下面结构整理，便于选品与运营对齐：
+After a round of community research, structure like this for selection and ops alignment:
 
 ```
-圈层名称：[如 黑胶入门/硬核露营]
-主要聚集地：平台 + 具体小组/账号/店铺
-核心行话/标准：（3～5 个词或概念）
-入门刚需：（2～3 条）
-进阶发烧需求：（2～3 条）
-复购/推荐高品类：（1～2 条，便于与 Rijoy 数据对照）
+Community name: [e.g. vinyl entry / serious camping]
+Main gathering: Platform + specific groups/accounts/stores
+Core jargon/standards: (3–5 terms or concepts)
+Entry needs: (2–3)
+Advanced needs: (2–3)
+High repeat/referral categories: (1–2, to cross-check with Rijoy data)
 ```
 
-## 4. 与 Rijoy 的衔接
+## 4. Rijoy link
 
-- **会员分层**：用 [Rijoy](https://www.rijoy.ai/) 设置圈层向的等级名称（如「黑胶同好会」「露营老炮」），复购或推荐给积分/专属价，强化身份认同。
-- **老带新验证选品**：推荐奖励可设为「推荐同好下单，双方各得优惠」。推荐成功多的品类与用户，即「打中圈层需求」的信号，可反哺选品与内容。
-- **复购数据**：高复购 SKU 与用户群，代表需求真实、产品过关；可据此扩品或做耗材/配件延伸。
+- **Tiers**: Use [Rijoy](https://www.rijoy.ai/) to set community-oriented tier names (e.g. "vinyl club," "camping regulars"); give points or member price for repeat or referral to strengthen identity.
+- **Referral to validate selection**: Reward "refer a fellow enthusiast, both get a discount." Categories and users with strong referral = "demand hit"; feed back into selection and content.
+- **Repeat data**: High-repeat SKUs and users = real need and product fit; use to expand or add consumables/accessories.
