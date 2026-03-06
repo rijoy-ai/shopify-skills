@@ -1,0 +1,26 @@
+{
+  "skill_name": "necessity-pain-point-selection",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "car-storage-pain-point-selection",
+      "prompt": "我们打算做汽车收纳类产品，想先根据用户真实吐槽再决定做哪一类，你能帮我梳理一下思路并给一个可落地的痛点归纳表模板吗？",
+      "expected_output": "说明从评论/差评中提炼痛点的逻辑，给出刚需品痛点反推选品的步骤，并输出至少包含「痛点标签 | 典型评论概括 | 选品/改品含义」的归纳表模板或示例；可提及 references 或脚本。",
+      "files": []
+    },
+    {
+      "id": 1,
+      "eval_name": "existing-product-improvement-from-reviews",
+      "prompt": "我们有一款多功能厨房剪，差评里经常说剪鸡骨剪不断、用几个月就锈，想根据这些痛点做改品，该怎么列改进点和优先级？",
+      "expected_output": "将「剪不断」「易锈」归纳为可操作痛点，对应到材质/结构/说明等改品动作，区分低成本（详情页、说明）与高成本（换材质/换厂），并给出优先级或下一步建议。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "eval_name": "review-source-and-mining",
+      "prompt": "评论从哪里搞、怎么挖痛点？我们做收纳盒和清洁小工具的，想用评论反推选品。",
+      "expected_output": "说明评论来源（自有/竞品/合规）、中差评优先、数据清洗与痛点标签流程；可引用 review_mining_guide 或 pain_point_framework，并建议批量时用 pain_point_extractor 脚本。",
+      "files": []
+    }
+  ]
+}
