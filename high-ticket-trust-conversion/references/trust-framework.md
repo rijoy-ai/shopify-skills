@@ -1,64 +1,63 @@
-## 高客单信任与转化框架总览
+## High-Ticket Trust & Conversion Framework Overview
 
-本文件为 `high-ticket-trust-conversion` 技能提供概念框架与结构参考，用于在复杂场景下快速对齐思路，避免输出“只讲道理不落地”的方案。
+This file gives the `high-ticket-trust-conversion` skill a shared framework so outputs stay consistent and actionable in complex situations.
 
-### 一、高客单决策的核心特征
+### 1. Core traits of high-ticket decisions
 
-- 决策参与者多：往往涉及本人、伴侣、家庭成员、专业朋友或顾问。
-- 决策周期长：从第一次看到信息到真正付款，可能经历数天到数月。
-- 替代方案复杂：不仅有其他品牌/机构，还有“不买/不做”的选项。
-- 风险感知高：担心“翻车、踩坑、被坑、浪费时间/金钱/机会成本”。
+- **Multiple stakeholders**: Often the buyer, partner, family, or a trusted advisor.
+- **Long cycle**: From first exposure to payment can be days to months.
+- **Complex alternatives**: Other brands, or “don’t buy / don’t do it.”
+- **High perceived risk**: Fear of failure, waste of time/money/opportunity.
 
-因此，信任建设不仅是“好评多”，而是让用户在整个决策链路中逐步形成三种感觉：
+Trust-building is not just “lots of good reviews”—it’s creating three feelings along the decision path:
 
-1. **被理解感**：你真的懂我的处境与顾虑。
-2. **可验证感**：你说的东西可以被验证和追溯，而不是空口号。
-3. **可控感**：即便出问题，我也不会一无所有，有兜底和补救空间。
+1. **Understood**: You get my situation and concerns.
+2. **Verifiable**: What you say can be checked, not just slogans.
+3. **In control**: If something goes wrong, I’m not left with nothing; there’s a fallback.
 
-### 二、决策链路（犹豫路径）拆解模板
+### 2. Decision path (“consideration journey”) template
 
-默认链路（可按行业微调）：
+Default path (adjust by industry):
 
-> 触达/种草 → 首次访问/浏览 → 收藏/关注/加入愿望清单 → 主动咨询/索取方案 → 多轮沟通与比较 → 决策与支付 → 交付体验 → 售后与复购/转介绍
+> Touch/awareness → first visit/browse → save/follow/wishlist → inquire/request offer → multi-touch compare → decide & pay → delivery → post-purchase support & repeat/referral
 
-对于每一环，技能在内部思考时应至少回答三件事：
+For each step, the skill should answer:
 
-1. 此阶段用户 **最可能在想什么/怕什么/犹豫什么**？
-2. 当前用户描述中，**哪类信任证据最有可能缺位**？
-3. 下一步可以增加哪一类“轻量动作”，来降低他们前进一步的心理门槛？
+1. What is the user **most likely thinking / fearing / hesitating** about?
+2. In the user’s description, **which type of trust evidence is probably missing**?
+3. What **small next step** would lower the bar to move forward?
 
-### 三、信任资产五大类
+### 3. Five trust asset categories
 
-在输出“信任资产盘点表”时，优先从以下五大类组织：
+When outputting a “trust asset audit,” use these five:
 
-1. **品牌与资质**：历史、资质证书、检测报告、门店/工厂、奖项与媒体报道。
-2. **专业与方案能力**：团队背景、服务流程、方法论、典型成功案例与数据结果。
-3. **交付与风险控制**：生产/施工/服务流程、质检机制、延期/不满意时的处理流程。
-4. **价格与价值逻辑**：定价依据、与低价方案的差异点、长期成本/收益比较。
-5. **社会证明与口碑**：真实评价、客户故事、视频访谈、复购与转介绍比例。
+1. **Brand & credentials**: History, certs, test reports, store/factory, awards, press.
+2. **Expertise & offer**: Team, process, methodology, strong cases with before/after and results.
+3. **Delivery & risk**: Production/service steps, QC, how you handle delay/damage/dissatisfaction.
+4. **Price & value**: How you price, difference vs cheaper options, long-term cost/benefit.
+5. **Social proof**: Real reviews, client stories, video proof, repeat and referral rates.
 
-每类资产，对应输出三列：
+For each category output three columns:
 
-- 当前已有：根据用户提供的信息或常识推断。
-- 缺失与优先级：从“对决策的影响度”排序。
-- 30 天内可补齐：用“可执行动作”描述，而不是抽象建议。
+- What you have (from user or inference).
+- Gaps and priority (by impact on decision).
+- What can be added in 30 days (concrete actions, not vague advice).
 
-### 四、页面与内容的信任设计要点
+### 4. Page & content trust design
 
-对于首页、专题落地页、PDP、预约/留资表单页，默认检查维度：
+For home, landing, PDP, and form pages, check:
 
-1. **首屏 5 秒问题**：是否在 5 秒内回答“你是谁 / 做什么 / 为谁 / 凭什么值这个价”？
-2. **证据可验证性**：证书、报告、案例是否可点开/放大/追溯，而非只写一句“某某认证”。
-3. **信息透明度**：材质/工艺/配置/流程、可做与不能做的边界是否写清楚。
-4. **价格与风险说明**：不是简单“优惠/原价”，而是解释价格构成与风险兜底方式。
-5. **轻量承诺设计**：是否提供“先体验/先评估/先设计方案”等小承诺，而非一上来就要大额付款。
+1. **5-second above-the-fold**: “Who you are / what you do / for whom / why it’s worth the price”?
+2. **Verifiable evidence**: Certs, reports, cases clickable/zoomable/traceable, not just “certified.”
+3. **Transparency**: Materials/process/config, scope, options, and “what we don’t do.”
+4. **Price & risk**: Not only “discount/price,” but price breakdown and risk reversal.
+5. **Light commitment**: “Try first / assessment / design first” before big payment.
 
-### 五、沟通与话术的原则
+### 5. Communication principles
 
-所有销售/客服 SOP 与话术框架都应遵循：
+All sales/CS SOPs and copy should:
 
-- 先共情再给方案：先复述与确认用户顾虑，再讲你的观点和证据。
-- 承认风险与不确定：诚实说明“什么做不到/不适合哪些人”，反而更容易建立信任。
-- 给可选项而不是逼单：用“阶梯”设计（小承诺→中承诺→大承诺），让用户有退路。
-- 避免空泛夸大：用具体数字、过程、前后对比、第三方评价代替空洞形容词。
-
+- Empathize first, then offer: Restate and confirm concerns before your view and evidence.
+- Acknowledge risk and uncertainty: Saying “what we can’t do / who it’s not for” builds trust.
+- Offer choices, not pressure: “Ladder” (small → medium → large commitment) so they have an exit.
+- Avoid vague hype: Use numbers, process, before/after, third-party proof instead of adjectives.

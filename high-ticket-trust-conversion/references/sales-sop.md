@@ -1,74 +1,73 @@
-## 高客单销售 / 客服 SOP 框架
+## High-Ticket Sales / CS SOP Framework
 
-本文件为 `high-ticket-trust-conversion` 技能在输出“咨询与销售/客服 SOP”与“常见顾虑话术”时提供结构参考。
+Use this when the skill outputs “inquiry and sales/CS SOP” and “common objection copy.”
 
-### 一、整体流程视角
+### 1. End-to-end flow
 
-推荐按以下步骤拆解首咨到成交：
+Recommended steps from first inquiry to close:
 
-1. 线索进入（表单/私信/电话/加微信）
-2. 首次回应与需求澄清
-3. 深挖需求与预算边界
-4. 提出初步方案方向与下一步动作
-5. 正式方案与报价说明
-6. 处理犹豫与反对意见
-7. 促成小承诺（预约/量房/体检/试听等）
-8. 促成大承诺（订金/签约/付款）
+1. Lead in (form/DM/call/WeChat)
+2. First reply and need clarification
+3. Deepen need and budget
+4. Suggest direction and next step
+5. Formal offer and quote
+6. Handle objections
+7. Get small commitment (booking/site visit/assessment/trial)
+8. Get big commitment (deposit/contract/payment)
 
-### 二、每个阶段的目标与要点
+### 2. Goal and focus per stage
 
-**1. 首次回应与需求澄清**
+**1. First reply and need clarification**
 
-- 目标：建立“被理解感”和“专业感”，让用户愿意多说两句。
-- 要点：自我介绍简短清晰，先问场景再问预算，不急于推产品。
+- Goal: “Understood” and “professional” so they keep talking.
+- Focus: Short intro, ask scenario before budget, don’t push product yet.
 
-**2. 深挖需求与预算边界**
+**2. Deepen need and budget**
 
-- 目标：了解真实需求优先级和可接受范围，避免后面反复推翻。
-- 要点：通过开放式问题引导用户讲故事，而不是查户口式盘问。
+- Goal: Real priorities and acceptable range so you don’t rework later.
+- Focus: Open questions so they tell the story, not a checklist.
 
-**3. 初步方案方向与下一步动作**
+**3. Direction and next step**
 
-- 目标：让用户看到“有路可走”，减少迷茫与无力感。
-- 要点：给出 1–2 个大致方向，并说明下一步会交付什么（如方案草图、体检结果、预算区间）。
+- Goal: They see “a path,” less confusion.
+- Focus: Give 1–2 directions and what you’ll deliver next (e.g. sketch, assessment, budget range).
 
-**4. 正式方案与报价说明**
+**4. Formal offer and quote**
 
-- 目标：把价格与价值、风险与保障讲清楚。
-- 要点：拆解价格构成，对比不同档位/方案，不回避风险点。
+- Goal: Price, value, risk, and guarantee clear.
+- Focus: Break down price, compare options, don’t hide risks.
 
-**5. 处理犹豫与反对意见**
+**5. Handle objections**
 
-- 目标：在尊重用户的前提下，帮助他们更理性地评估利弊。
-- 要点：共情 → 明确具体担心 → 提供证据/案例 → 给出可选路径。
+- Goal: Respect their view and help them weigh pros and cons.
+- Focus: Empathize → name the specific worry → evidence/case → options.
 
-**6. 促成小承诺与大承诺**
+**6. Small and big commitment**
 
-- 目标：通过阶梯式承诺设计，降低“一步到位”带来的压力。
-- 要点：设计 1–2 个“轻量动作”（预约上门/体检/试听/方案评估）作为过渡。
+- Goal: Reduce “all-or-nothing” pressure with a ladder.
+- Focus: 1–2 light steps (e.g. book visit / assessment / trial) as a bridge.
 
-### 三、常见顾虑与回复结构
+### 3. Common objections and reply structure
 
-常见顾虑可以按以下维度分类：
+Group objections by:
 
-- 价格类：太贵/预算超支/怕不值。
-- 风险类：怕翻车/怕失败/怕对身体或生活有负担。
-- 信任类：怕被销售“忽悠”/怕售后没人管。
-- 决策类：要和家人商量/还有别家要看/想再对比一下。
+- **Price**: Too expensive / over budget / not worth it.
+- **Risk**: Fear of failure / burden on body or life.
+- **Trust**: Fear of being sold / no one to turn to after sale.
+- **Decision**: Need to discuss with family / compare others / think more.
 
-推荐统一使用“4 步结构化回复法”：
+Use a **4-step reply**:
 
-1. 共情：先理解对方的担心，复述对方的话。
-2. 明确：把模糊的担心具体化（到底怕什么后果）。
-3. 证据：提供数据、案例、第三方背书。
-4. 选项：给出 1–2 条可行路径，而不是非买不可。
+1. Empathize: Restate their concern.
+2. Specify: Turn vague worry into concrete consequence.
+3. Evidence: Data, case, third-party.
+4. Options: 1–2 paths, not “you must buy.”
 
-### 四、话术示例表（结构模板）
+### 4. Copy example table (structure)
 
-在技能实际输出时，推荐按以下表格形式呈现话术：
+When the skill outputs copy, use a table with:
 
-- 场景：例如“首次加微信自我介绍”“用户说要再想想”“用户嫌贵”“用户家人反对”等。
-- 用户说法示例：写出 1–2 句典型用户表达。
-- 推荐回复框架：用自然语言描述 4 步结构（可以适当给出示例句）。
-- 可选补充内容：相关案例、截图、内容链接等。
-
+- **Scenario**: e.g. “first WeChat intro,” “user says will think,” “user says expensive,” “family objects.”
+- **Example user line**: 1–2 typical phrases.
+- **Recommended reply**: 4-step structure (can add sample sentences).
+- **Optional**: Related case, screenshot, link.

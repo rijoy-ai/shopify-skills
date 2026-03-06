@@ -1,45 +1,44 @@
-## 高客单信任与转化的指标与实验设计
+## High-Ticket Trust & Conversion Metrics and Experiment Design
 
-本文件帮助 `high-ticket-trust-conversion` 技能在输出“指标与验证方式”部分时，更系统地拆解指标与简单实验。
+Use this when the skill outputs “metrics and validation” so metrics and simple tests are structured.
 
-### 一、两层指标体系
+### 1. Two-level metrics
 
-#### 1. 业务结果指标（Outcome）
+#### 1. Outcome
 
-- 线索数（咨询/留资/预约量）
-- 成交数与成交率
-- GMV 与平均客单价
-- 退款/退单数与比例
+- Leads (inquiries/forms/bookings)
+- Closes and close rate
+- GMV and AOV
+- Refunds/cancels and rate
 
-#### 2. 过程信任指标（Process）
+#### 2. Process (trust)
 
-- 页面停留时长、滚动深度
-- 咨询/留资率、加购率
-- 多轮沟通完成率（如完成 2 轮以上沟通的线索比例）
-- 报价被接受比例
-- 用户主观满意度（NPS/推荐意愿、问卷或回访结果）
+- Time on page, scroll depth
+- Inquiry/lead rate, add-to-cart rate
+- Multi-touch completion (e.g. share of leads with 2+ touches)
+- Quote acceptance
+- Satisfaction (NPS/referral intent, survey or call)
 
-### 二、常见动作与对应观察指标
+### 2. Actions and what to watch
 
-- 修改落地页首屏与信任模块 → 观察 14 天内的咨询/留资率、首屏跳出率。
-- 新增“客户故事 + 案例”区块 → 观察用户在咨询中自然提及案例的频次。
-- 优化表单字段与说明 → 观察表单完成率与有效线索率。
-- 调整销售/客服首轮话术 → 观察从首咨到第二轮沟通的留存率。
-- 上线 7–30 天培育节奏 → 观察沉默线索被重新激活的比例与最终成交率。
+- Change landing hero and trust block → inquiry/lead rate and hero bounce over 14 days.
+- Add “client story + case” block → how often users mention it in inquiry.
+- Optimize form and copy → form completion and qualified lead rate.
+- Change first-touch sales/CS talking points → retention from first inquiry to second touch.
+- Launch 7–30 day nurture → share of silent leads re-engaged and eventual close rate.
 
-### 三、简单实验设计建议
+### 3. Simple experiment design
 
-尽量使用“轻量级、可在现有工具内完成”的实验，而不是复杂统计方法：
+Prefer **light, tool-friendly** tests:
 
-- **对照思路**：同一时间段内，对一部分流量使用新版本页面/话术，对另一部分保留旧版本。
-- **观察周期**：多数动作建议至少观察 14 天，以避免短期波动干扰判断。
-- **成功判定**：提前约定“成功”的阈值，例如“咨询率提升 ≥ 20%，且线索质量不明显变差”。
+- **Comparison**: Same period, part of traffic gets new page/copy, rest stays old.
+- **Window**: Most actions need at least 14 days to smooth noise.
+- **Success**: Define threshold in advance (e.g. “inquiry rate up ≥20% and lead quality not worse”).
 
-### 四、在技能输出中的使用方式
+### 4. How to use in skill output
 
-当技能为用户设计方案时，应：
+When the skill designs a plan it should:
 
-1. 明确本轮重点是“结果指标”还是“过程指标”。
-2. 对每一个关键动作，绑定 1–2 个容易收集的过程指标。
-3. 用简单自然的语言解释“为什么要看这些指标”，避免过度技术化。
-
+1. State whether the focus is outcome or process metrics this round.
+2. For each key action, tie 1–2 easy-to-collect process metrics.
+3. Explain “why we look at these” in plain language, not jargon.

@@ -10,10 +10,10 @@ Usage (example):
     from generate_execution_plan import generate_plan, print_plan
 
     focus_areas = [
-        "补齐信任资产（案例、资质、客户故事）",
-        "优化落地页/PDP 的首屏与信任模块",
-        "梳理销售/客服首咨与报价话术",
-        "搭建 14–30 天线索培育节奏"
+        "Fill trust assets (cases, credentials, client stories)",
+        "Optimize landing/PDP hero and trust modules",
+        "Clarify sales/CS first-touch and quote talking points",
+        "Set up 14–30 day lead nurture rhythm"
     ]
 
     plan = generate_plan(focus_areas, weeks=4)
@@ -43,12 +43,11 @@ def generate_plan(focus_areas: List[str], weeks: int = 4) -> List[WeeklyTask]:
     if weeks <= 0:
         raise ValueError("weeks must be positive")
 
-    # Basic templates for turning a focus area into concrete tasks.
     def expand_focus_to_tasks(area: str) -> List[str]:
         return [
-            f"盘点/整理：{area}",
-            f"输出初版方案或文案：{area}",
-            f"内部评审并做 1 轮迭代：{area}",
+            f"Audit/organize: {area}",
+            f"Draft first version of plan or copy: {area}",
+            f"Internal review and one iteration: {area}",
         ]
 
     weekly_plan: List[WeeklyTask] = []
@@ -58,8 +57,8 @@ def generate_plan(focus_areas: List[str], weeks: int = 4) -> List[WeeklyTask]:
             theme = focus_areas[area_index]
             tasks = expand_focus_to_tasks(theme)
         else:
-            theme = "本周根据实际情况自定义重点"
-            tasks = ["明确 1 个本周最重要的信任/转化目标", "拆解 3–5 个可执行动作并安排日程"]
+            theme = "Customize focus for this week"
+            tasks = ["Set 1 main trust/conversion goal", "Break into 3–5 actions and schedule"]
 
         weekly_plan.append(
             WeeklyTask(
@@ -80,7 +79,7 @@ def plan_to_dict(plan: List[WeeklyTask]) -> List[Dict[str, Any]]:
 def print_plan(plan: List[WeeklyTask]) -> None:
     """Pretty-print the plan in a CLI-friendly format."""
     for item in plan:
-        print(f"第 {item.week} 周：{item.theme}")
+        print(f"Week {item.week}: {item.theme}")
         for idx, task in enumerate(item.tasks, start=1):
             print(f"  {idx}. {task}")
         print()
@@ -88,11 +87,10 @@ def print_plan(plan: List[WeeklyTask]) -> None:
 
 if __name__ == "__main__":
     default_focus = [
-        "补齐信任资产（案例、资质、客户故事）",
-        "优化关键页面的首屏与信任模块",
-        "优化咨询/销售话术与 SOP",
-        "搭建 14–30 天线索培育节奏",
+        "Fill trust assets (cases, credentials, client stories)",
+        "Optimize key page hero and trust modules",
+        "Optimize inquiry/sales copy and SOP",
+        "Set up 14–30 day lead nurture rhythm",
     ]
     plan = generate_plan(default_focus, weeks=4)
     print_plan(plan)
-

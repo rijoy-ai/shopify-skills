@@ -3,28 +3,27 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "我在做一个线上珠宝首饰店，客单价在 8000-15000 左右，主要通过小红书和抖音引流，落地页是单品 PDP。现在最大问题是：收藏和加购不少，但愿意点“咨询客服”或留电话的人很少。帮我用你的高客单信任技能完整诊断一下问题出在什么环节，并给我一个未来 30 天可以执行的改进方案。",
-      "expected_output": "一份围绕高客单珠宝店的系统诊断与方案，至少包括：结论摘要（3-5 条）、决策链路诊断（触达到成交的犹豫路径）、信任资产盘点（已有与缺失）、PDP 页面改版检查清单与模块结构建议、咨询话术与 SOP 示例、7-30 天线索培育节奏、关键指标与 2-4 周执行排期。",
+      "prompt": "I run an online jewelry store, AOV around 8000–15000. I get traffic from Xiaohongshu and Douyin to a single-product PDP. The main issue: lots of saves and add-to-cart, but very few click ‘consult CS’ or leave contact. Use your high-ticket trust skill to diagnose where the problem is and give me a 30-day improvement plan.",
+      "expected_output": "A full diagnosis and plan for high-ticket jewelry: at least summary (3–5 points), decision-path diagnosis (touch to close), trust asset audit (have vs missing), PDP redesign checklist and module suggestions, inquiry copy and SOP examples, 7–30 day lead nurture rhythm, key metrics, and 2–4 week execution schedule.",
       "files": []
     },
     {
       "id": 2,
-      "prompt": "我做的是线下为主的高端全屋定制家居，客单 10-30 万，线上主要是官网 + 微信咨询，用户通常会先在官网留下手机号和户型信息，再由顾问回访。现在问题是：线索量还可以，但从“留资到到店/上门量房”的转化率很低，很多线索打过去电话也觉得防备心很强。请你帮我基于这个场景，评估我们在信任建设和沟通流程上的主要短板，并给出优化官网落地页 + 顾问话术 + 跟进节奏的方案。",
-      "expected_output": "一份针对高端全屋定制家居的信任与转化优化方案，重点覆盖：决策链路诊断（从首次访问官网到预约上门）、信任资产盘点（门店、工厂、案例、施工标准等）、官网落地页和预约表单的检查清单和改版建议、顾问首轮沟通与报价阶段的话术结构化模板、多节点（7-30 天）跟进节奏表，以及可量化的过程与结果指标。",
+      "prompt": "I do premium whole-home custom, mainly offline, AOV 100k–300k. Online we have a site + WeChat consultation; users usually leave phone and floor plan first, then an advisor calls. Problem: decent lead volume but low conversion from lead to site visit / home measure. Many leads sound very guarded on the phone. Based on this, assess our trust and communication gaps and give a plan to improve landing page + advisor copy + follow-up rhythm.",
+      "expected_output": "A plan for premium custom home: decision-path from first site visit to booking, trust asset audit (store, factory, cases, build standards), landing and form checklist and redesign ideas, structured advisor copy for first touch and quote, multi-touch (7–30 day) follow-up table, and measurable process and outcome metrics.",
       "files": []
     },
     {
       "id": 3,
-      "prompt": "我在做一个医美机构的线上投放，主推 1-3 万价位的抗衰项目。现在从广告到落地页的点击率还行，但用户留微信/手机号的转化率很低，而且很多人加了微信之后很久都不回。请你站在“高客单+长决策”的视角，帮我：1）诊断当前链路中最可能缺失的信任点；2）给出落地页内容结构 + 风险与保障说明 + 常见顾虑回复话术；3）设计一个至少 14 天的私域触达节奏（包括内容主题和分层思路）。",
-      "expected_output": "一份面向医美抗衰项目的高客单信任转化方案，包含：结论摘要、犹豫路径诊断（从看到广告到到院咨询）、信任资产清单与缺口建议（资质、专家、案例、风险说明、复购与转介绍等）、落地页模块结构草图与关键文案要点、常见顾虑库与结构化回复话术示例，以及按时间和意向分层的 14 天私域触达节奏表。",
+      "prompt": "I’m running online ads for a medical beauty clinic, main offer 10k–30k anti-aging. CTR from ad to landing is OK, but very few leave WeChat/phone. Many who add WeChat don’t reply for a long time. From a high-ticket, long-decision view: 1) Diagnose the most likely missing trust points; 2) Give landing content structure + risk and guarantee + objection copy; 3) Design at least a 14-day owned-channel cadence (content themes and segments).",
+      "expected_output": "A plan for medical beauty anti-aging: summary, consideration-journey from ad to clinic visit, trust asset list and gaps (credentials, experts, cases, risk, repeat/referral), landing module sketch and key copy, common objection bank with structured replies, and 14-day owned-channel touchpoint table by time and intent.",
       "files": []
     },
     {
       "id": 4,
-      "prompt": "我有一家在线销售高端学习培训项目的机构，客单在 1.5-3 万，课程周期半年以上。现在线索量不算少，但销售顾问反馈：很多用户表示“再想想”“和家里人商量一下”之后就再也联系不上了。请你用你的高客单信任技能，从“信任资产不够具体”“价格与价值解释不清”“多人共同决策”的角度，拆解我们的短板，并输出一套完整的销售/客服 SOP 和话术框架，帮助我们提高从首咨到成交的转化率。",
-      "expected_output": "一份针对高客单培训项目的信任与销售 SOP 方案，至少包括：决策链路与典型犹豫点诊断、信任资产盘点与补齐建议（讲师、往期学员、结果案例、学习服务等）、首轮咨询—方案说明—报价—处理异议—收尾的步骤拆解与示例话术、针对“和家人商量/再想想”等常见反对意见的结构化回复模板，以及 2-4 周内可落地的训练与执行计划。",
+      "prompt": "I sell premium online training, AOV 15k–30k, program over 6 months. We get a fair number of leads, but sales say many say ‘I’ll think about it’ or ‘need to discuss with family’ and then go silent. Use your high-ticket trust skill to break down gaps in ‘trust assets not specific enough,’ ‘price and value unclear,’ and ‘multi-party decision,’ and output a full sales/CS SOP and copy framework to improve inquiry-to-close.",
+      "expected_output": "A plan for high-ticket training: decision-path and main hesitation points, trust asset audit and fill-ins (instructor, past students, results, learning support), steps and copy examples for first inquiry → offer → quote → objections → close, structured reply templates for ‘discuss with family / think more,’ and a 2–4 week training and execution plan.",
       "files": []
     }
   ]
 }
-

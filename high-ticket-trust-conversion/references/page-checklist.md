@@ -1,55 +1,54 @@
-## 高客单产品页面与表单检查清单
+## High-Ticket Page & Form Checklist
 
-本文件为 `high-ticket-trust-conversion` 技能在输出“页面与内容的信任设计”部分时提供可复用的检查结构，避免遗漏关键模块。
+Use this when the skill outputs “page and content trust design” so key modules aren’t missed.
 
-### 一、首屏区域（Hero 区）
+### 1. Hero (above the fold)
 
-- 核心一句话定位是否明确：为谁、解决什么问题、为什么值得这个价。
-- 是否有 1–2 个强有力的信任锚点（年份、服务人数、代表性客户、权威认证等）。
-- 是否提供清晰的下一步动作（咨询/预约/领取方案），而不是只有“立即购买”。
-- 高价值视觉是否真实可信（实景 vs 过度 P 图；真实作品/案例 vs 模板图）。
+- One-line positioning clear: for whom, what problem, why it’s worth the price.
+- 1–2 strong trust signals (years in business, people served, representative clients, certs).
+- Clear next step (consult/book/get offer), not only “buy now.”
+- Visuals credible (real vs over-PS; real work/cases vs stock).
 
-### 二、问题与场景共鸣区
+### 2. Problem & scenario resonance
 
-- 是否用用户自己的语言描述典型痛点与场景，而不是只讲产品参数。
-- 是否覆盖目标用户的关键犹豫：怕踩坑、怕麻烦、怕家人反对、怕结果不如预期等。
-- 是否区分不同决策角色（本人/家人/决策小组）的关心点。
+- Use the user’s language for typical pains and scenarios, not only specs.
+- Cover main objections: fear of failure, hassle, family pushback, result not as expected.
+- Address different roles (buyer / family / decision group).
 
-### 三、方案与过程说明区
+### 3. Offer & process
 
-- 是否用图文/流程图形式解释“从咨询到交付”的关键步骤。
-- 每个步骤是否对应一项“降低不确定性”的设计（如量房/体检/方案评估/中途检查点）。
-- 是否清晰说明“什么适合/不适合做”，避免制造虚假期待。
+- Explain “from inquiry to delivery” in text/diagram.
+- Each step reduces uncertainty (e.g. site visit / assessment / design review / mid-point check).
+- Clearly state “what we do / don’t do” to avoid false expectations.
 
-### 四、价格与价值说明区
+### 4. Price & value
 
-- 是否解释价格构成（材料/工时/设计/服务/保障等），而不是只给一个总价。
-- 是否有与低价替代方案的对比（从风险、耐用度、长期成本等维度）。
-- 是否提供不同档位/组合方案，方便用户在预算内做决策。
+- Explain price (materials/time/design/service/guarantee), not only total.
+- Compare with cheaper options (risk, durability, long-term cost).
+- Offer tiers/bundles so they can decide within budget.
 
-### 五、信任与风控模块
+### 5. Trust & risk
 
-- 权威资质：营业执照、资质证书、检测报告等是否可查验。
-- 实体支撑：门店/工厂/医生团队/讲师团队的真实介绍与照片/视频。
-- 风险与兜底：质保、退换、重做、违约补偿等条款是否被提前写清。
-- 第三方见证：媒体报道、合作伙伴、专业机构认证等。
+- Credentials: business license, certs, test reports verifiable.
+- Physical presence: store/factory/team intro with real photos/video.
+- Risk reversal: warranty, returns, remake, breach compensation stated upfront.
+- Third-party: press, partners, professional certs.
 
-### 六、案例与客户故事区
+### 6. Cases & client stories
 
-- 是否有足量的前后对比图、项目记录、学习前后变化等。
-- 是否覆盖不同类型客户（预算不同、诉求不同、家庭结构不同）。
-- 每个案例是否包含：背景 → 决策过程 → 方案 → 结果 → 客户原话/反馈。
+- Enough before/after, project logs, learning outcomes.
+- Different client types (budget, need, family).
+- Each case: context → decision process → offer → result → quote/feedback.
 
-### 七、社交证明与口碑
+### 7. Social proof
 
-- 是否展示真实评价截图，而非“匿名好评轮播图”。
-- 是否有视频访谈或音频记录等更真实的素材。
-- 是否展示复购与转介绍比例、长期客户数据等。
+- Real review excerpts, not anonymous carousel.
+- Video or audio when possible.
+- Repeat and referral rates, long-term client data.
 
-### 八、表单与转化入口
+### 8. Form & conversion entry
 
-- 字段数量是否合理，是否存在“可推后再问”的非必填项。
-- 是否明确说明“留资后会发生什么”（多久联系、以什么方式、会不会频繁打扰）。
-- 是否提供隐私保护说明与退订方式。
-- 是否有“轻量承诺”的选项（只预约咨询/线上解答 vs 直接到店/付款）。
-
+- Reasonable number of fields; defer “can ask later” if possible.
+- Clear “what happens after I submit” (when you’ll contact, how, how often).
+- Privacy and opt-out.
+- Light-commitment option (e.g. book consultation / online Q&amp;A vs in-person / payment).
