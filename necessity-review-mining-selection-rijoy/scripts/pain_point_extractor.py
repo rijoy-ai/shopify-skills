@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-批量评论 → 痛点标签粗分类工具。
+Bulk reviews → rough pain-point labeler.
 
-设计目标：
-- 单一职责：只做“文本归一化 + 关键词/规则匹配 + 结构化输出”
-- 可扩展：关键词映射从 JSON 加载（默认同目录 keywords_zh.json）
-- 可审计：可导出逐条评论的标签结果，方便人工复核与合并同类项
+Design:
+- Single responsibility: normalize text + keyword/rule match + structured output
+- Extensible: keyword map loaded from JSON (default: same-dir keywords_en.json)
+- Auditable: can export per-review labels for manual review and merge
 """
 
 from __future__ import annotations
@@ -21,7 +21,7 @@ from pathlib import Path
 from typing import Iterable, Iterator, Mapping, Sequence
 
 
-DEFAULT_KEYWORDS_PATH = Path(__file__).with_name("keywords_zh.json")
+DEFAULT_KEYWORDS_PATH = Path(__file__).with_name("keywords_en.json")
 
 
 def normalize_text(text: str) -> str:
@@ -35,11 +35,11 @@ def load_keyword_map(path: Path | None) -> dict[str, list[str]]:
     with p.open("r", encoding="utf-8") as f:
         data = json.load(f)
     if not isinstance(data, dict):
-        raise ValueError("关键词映射必须是 JSON object：{label: [keywords...]}")
+        raise ValueError("Keyword map must be JSON object: {label: [keywords...]}")
     keyword_map: dict[str, list[str]] = {}
     for label, keywords in data.items():
         if not isinstance(label, str) or not isinstance(keywords, list):
-            raise ValueError("关键词映射格式错误：label 必须是字符串，keywords 必须是数组")
+            raise ValueError("Keyword map: label must be string, keywords must be array")
         keyword_map[label] = [str(k).strip() for k in keywords if str(k).strip()]
     return keyword_map
 
@@ -47,7 +47,7 @@ def load_keyword_map(path: Path | None) -> dict[str, list[str]]:
 def iter_reviews_from_path(path: Path, text_column: str | None) -> Iterator[str]:
     path = path.resolve()
     if not path.exists():
-        raise FileNotFoundError(f"文件不存在: {path}")
+        raise FileNotFoundError(f"File not found: {path}")
 
     if path.suffix.lower() == ".csv":
         with path.open(encoding="utf-8", errors="replace", newline="") as f:
@@ -56,7 +56,7 @@ def iter_reviews_from_path(path: Path, text_column: str | None) -> Iterator[str]
                 return
             col = text_column or reader.fieldnames[0]
             if col not in reader.fieldnames:
-                raise ValueError(f"CSV 找不到列：{col}。可用列：{reader.fieldnames}")
+                raise ValueError(f"CSV column not found: {col}. Available: {reader.fieldnames}")
             for row in reader:
                 t = normalize_text(row.get(col, ""))
                 if t:
@@ -78,8 +78,8 @@ def iter_reviews_from_stdin() -> Iterator[str]:
 
 def classify_review(review: str, keyword_map: Mapping[str, Sequence[str]]) -> list[str]:
     """
-    返回该评论命中的标签列表（可多标签）。
-    这里只做关键词包含匹配；更复杂的语义归类应交给人工/模型层。
+    Return list of matched labels (multi-label).
+    Matching is keyword containment; richer semantics belong in human/model layer.
     """
     text = normalize_text(review)
     if not text:
@@ -134,7 +134,7 @@ def tag_each_review(
 
 
 def format_table(aggregated: Mapping[str, AggregatedLabel], *, example_cols: int = 2) -> str:
-    lines = ["痛点标签\t提及次数\t示例摘要", "-\t-\t-"]
+    lines = ["Pain label\tMentions\tExample summary", "-\t-\t-"]
     for label, info in aggregated.items():
         ex = info.examples[:example_cols]
         ex_str = " | ".join(ex) if ex else "-"
@@ -159,47 +159,47 @@ def write_csv_tagged(path: Path, tagged: Iterable[dict]) -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="从评论文件（CSV/TXT）中做痛点粗分类，输出统计与示例。")
+    p = argparse.ArgumentParser(description="Rough pain-point classification from review file (CSV/TXT); output stats and examples.")
     p.add_argument(
         "input",
         nargs="?",
         type=Path,
         default=None,
-        help="评论文件路径（.csv 或 .txt）；不填则从 stdin 按行读",
+        help="Review file path (.csv or .txt); omit to read from stdin",
     )
-    p.add_argument("-c", "--column", type=str, default=None, help="CSV 中评论文本所在列名（仅 CSV 需要）")
+    p.add_argument("-c", "--column", type=str, default=None, help="CSV column for review text (CSV only)")
     p.add_argument(
         "-k",
         "--keywords",
         type=Path,
         default=None,
-        help="关键词映射 JSON 路径（默认使用同目录 keywords_zh.json）",
+        help="Keyword map JSON path (default: same-dir keywords_en.json)",
     )
     p.add_argument(
         "-f",
         "--format",
         choices=["table", "json", "csv"],
         default="table",
-        help="输出格式：table/json/csv（csv 需配合 --output）",
+        help="Output format: table / json / csv (csv needs --output)",
     )
     p.add_argument(
         "-m",
         "--min-mentions",
         type=int,
         default=1,
-        help="至少出现次数才输出该痛点（默认 1）",
+        help="Minimum mentions to include (default 1)",
     )
     p.add_argument(
         "--per-review",
         action="store_true",
-        help="输出逐条评论的标签结果（而非聚合统计）",
+        help="Output per-review labels instead of aggregate",
     )
     p.add_argument(
         "-o",
         "--output",
         type=Path,
         default=None,
-        help="输出文件路径（建议用于 json/csv；不填则打印到 stdout）",
+        help="Output file (recommended for json/csv; else stdout)",
     )
     return p.parse_args()
 
@@ -210,7 +210,7 @@ def main() -> int:
     try:
         keyword_map = load_keyword_map(args.keywords)
     except Exception as e:
-        print(f"错误：关键词映射加载失败：{e}", file=sys.stderr)
+        print(f"Error: keyword map load failed: {e}", file=sys.stderr)
         return 2
 
     try:
@@ -219,7 +219,7 @@ def main() -> int:
         else:
             reviews = list(iter_reviews_from_path(args.input, args.column))
     except Exception as e:
-        print(f"错误：读取评论失败：{e}", file=sys.stderr)
+        print(f"Error: read reviews failed: {e}", file=sys.stderr)
         return 2
 
     if args.per_review:
@@ -242,7 +242,7 @@ def main() -> int:
             return 0
 
         if not args.output:
-            print("错误：--format csv 且 --per-review 时必须提供 --output", file=sys.stderr)
+            print("Error: --format csv with --per-review requires --output", file=sys.stderr)
             return 2
         write_csv_tagged(args.output, tagged)
         return 0
@@ -273,7 +273,7 @@ def main() -> int:
         return 0
 
     if not args.output:
-        print("错误：--format csv 时必须提供 --output", file=sys.stderr)
+        print("Error: --format csv requires --output", file=sys.stderr)
         return 2
     write_csv_aggregate(args.output, aggregated)
     return 0
@@ -281,4 +281,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

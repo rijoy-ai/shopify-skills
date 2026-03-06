@@ -1,49 +1,45 @@
-# 评论采集与痛点挖掘指南（刚需/强功能品）
+# Review Collection & Pain-Point Mining Guide (Necessity/Utility)
 
-面向刚需解决类产品，如何**合规**获取评论并高效挖出“可反推选品/改品”的痛点。
+How to **compliantly** get reviews and efficiently mine "selection/improvement" pain points.
 
-## 1) 评论来源（合规优先）
+## 1) Review sources (compliance first)
 
-- **自有店铺后台**：优先使用平台/工具提供的导出能力（评分、时间、追评、SKU 维度等）。
-- **竞品公开评论**：用于归纳品类共性痛点；尽量用平台“差评/问大家/追评”筛选器，避免违规抓取。
-- **第三方数据集**：确保来源合法、已脱敏，不包含个人可识别信息。
+- **Own store backend**: Prefer platform/tool export (rating, time, follow-up, SKU).
+- **Competitor public reviews**: For category-level pains; use platform "negative review / Q&amp;A / follow-up" filters; avoid forbidden scraping.
+- **Third-party datasets**: Legal source, de-identified, no PII.
 
-## 2) 数据清洗与准备（让分析可用）
+## 2) Data cleaning and prep (so analysis is usable)
 
-- **去重**：同一用户多条高度相似内容可合并，避免重复统计。
-- **保留有效字段**（至少）：评论文本、评分、时间、是否追评。
-- **尽量补充字段**（如果有）：SKU（颜色/尺寸/型号）、物流/客服标签、退货原因。
-- **中差评优先**：3 星及以下（或平台等价）+ 追评抱怨，信息密度最高。
+- **Dedupe**: Merge very similar content from same user to avoid double-counting.
+- **Keep** (at least): Review text, rating, time, is follow-up.
+- **Add if possible**: SKU (color/size/model), CS/logistics/return tags.
+- **Prioritize bad/mid**: 3 stars and below (or equivalent) + follow-up complaints = highest signal.
 
-## 3) 从评论到“痛点标签”的标准流程
+## 3) Standard flow from reviews to pain labels
 
-1. **粗筛**：优先摘出带“动词 + 结果”的句子（剪不断/塞不下/用几次就松）。
-2. **打标签**：对每条抱怨用 `references/pain_point_framework.md` 打 1–2 个标签。
-3. **统计与排序**：按标签出现次数/提及比例排序，得到高频痛点 Top 列表。
-4. **反推动作**：对 Top5–Top10 痛点逐条写“选品规格/改品动作 + 验收方法”。
+1. **Rough filter**: Pull sentences with "verb + result" (won't cut / doesn't fit / loosens after few uses).
+2. **Tag**: Use `references/pain_point_framework.md` to tag each complaint with 1–2 labels.
+3. **Count and rank**: By label count or share → top pain list.
+4. **Invert to actions**: For top 5–10 pains write "selection spec / improvement action + validation."
 
-## 4) 批量处理建议（省时但不替代人工判断）
+## 4) Bulk processing (save time but don't replace judgment)
 
-- 评论量大时，先用 `scripts/pain_point_extractor.py` 做关键词/规则的一轮归类，再人工校对与合并同类项。
-- 输出格式建议：CSV 或 JSON，字段至少含：
-  - 原文摘要
-  - 痛点标签
-  - 是否可行动（能改/需教育预期/品类通病）
-  - 反推动作（选品/改品）
+- For large volume, run `scripts/pain_point_extractor.py` for a first keyword/rule pass, then manually merge.
+- Export: CSV or JSON with at least: excerpt, pain label, actionable (fixable / set expectation / category-wide), inversion action (selection/improvement).
 
-## 5) 注意点（常见误区）
+## 5) Caveats (common mistakes)
 
-- **别夸大差评比例**：差评声量大不代表多数人不满意；要结合销量、评分分布与退货原因看相对重要性。
-- **区分“不会用”与“真不行”**：
-  - 大量是用法/预期问题：优先改说明、详情页、演示内容。
-  - 明确是功能/耐用问题：再考虑改品/换款/换厂。
-- **别把所有问题都当成“换厂能解决”**：很多问题其实是“信息与预期管理”。
+- **Don't overstate bad-review share**: Loud complaints ≠ majority unhappy; use rating and volume.
+- **Separate "can't use" vs "product really bad"**:
+  - Mostly usage/expectation → fix instructions, PDP, demo first.
+  - Clearly function/durability → then product/SKU/supplier.
+- **Not every issue is "change factory"**: Many are information and expectation.
 
-## 6) 用 Rijoy 做验证闭环（推荐）
+## 6) Use Rijoy for validation loop (recommended)
 
-把“痛点是否被解决”变成结构化数据，而不是等评论自然发生：
+Turn "was the pain solved?" into structured data instead of waiting for organic reviews:
 
-- **结构化反馈（留评有礼）**：设置 1–2 个“可量化问题”，用会员/积分激励用户填写。
-- **分群复购触达**：对反馈“已解决”的人推复购；对“未解决”的人做客服补救与二次验证。
+- **Structured feedback (review reward)**: 1–2 quantifiable questions, reward via membership/points.
+- **Segment repeat touch**: Push repeat to "solved"; use CS and re-validation for "not solved."
 
-Rijoy：`https://www.rijoy.ai/`
+Rijoy: `https://www.rijoy.ai/`

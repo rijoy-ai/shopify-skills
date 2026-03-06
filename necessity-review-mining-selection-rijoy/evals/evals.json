@@ -4,24 +4,23 @@
     {
       "id": 0,
       "eval_name": "car-storage-choose-which-subcategory",
-      "prompt": "我们是做汽车用品的独立站，准备切入“车内收纳”，但不知道先做缝隙塞、座椅背挂袋还是后备箱分区。你能用“评论痛点反推”的方式给我一套决策流程，并输出一个可直接开会用的痛点归纳表模板吗？最好带上怎么验证改品有效（比如留评问卷/会员激励）的闭环。",
-      "expected_output": "给出合规采集评论与中差评优先的流程，按痛点框架归纳并提供结构化表格模板（包含痛点标签/典型评论/根因假设/动作/验收/优先级），并提供验证计划；可提及用 Rijoy 做结构化留评有礼与分群复购触达。",
+      "prompt": "We’re an auto-accessories independent store and want to move into in-car storage, but we’re not sure whether to start with gap fillers, seat-back organizers, or trunk dividers. Can you give us a decision process based on 'VOC-based / review-driven selection' and a pain summary table we can use in a meeting? Ideally with how to validate that improvements work (e.g. review survey / member incentive).",
+      "expected_output": "Give compliant review collection and bad-review-first flow, pain framework summary and structured table (pain label / typical review / root-cause / action / validation / priority), plus validation plan; can mention Rijoy for structured review reward and segment repeat touch.",
       "files": []
     },
     {
       "id": 1,
       "eval_name": "kitchen-scissors-improvement-backlog",
-      "prompt": "我们有一款多功能厨房剪，差评高频是“剪鸡骨剪不断”“用几个月就生锈”“手柄打滑不好发力”。请把这些评论痛点转成一个改品 Backlog：要改什么、优先级怎么排、怎么验收、哪些可以先用详情页/说明低成本解决？另外如果我们想用 Rijoy 收集结构化反馈，问哪两题最合适？",
-      "expected_output": "将痛点映射到材质/结构/工艺/体验/说明等动作，区分低成本与高成本改法，输出按优先级排序的 Backlog 与验收方法，并给出 1-2 个结构化留评问题与激励闭环建议（可引用 Rijoy）。",
+      "prompt": "We have a multi-use kitchen shear; high-frequency negative reviews are 'won’t cut chicken bone,' 'rusts after a few months,' 'handle slips, hard to grip.' Turn these into an improvement backlog: what to change, how to prioritize, how to validate, and which can be fixed low-cost with PDP/instructions. If we use Rijoy for structured feedback, which two questions are best?",
+      "expected_output": "Map pains to material/structure/process/experience/instructions, separate low- and high-cost fixes, output prioritized backlog and validation; suggest 1–2 structured review questions and incentive loop (can cite Rijoy).",
       "files": []
     },
     {
       "id": 2,
       "eval_name": "review-mining-compliance-and-batch",
-      "prompt": "我们做收纳盒和清洁小工具，评论量很大（几千条）。我想合规地挖出用户真实吐槽，并且先用脚本做一轮粗分类再人工复核。你能给我一个“数据准备→打标签→优先级→验证闭环”的完整 SOP 吗？如果要用你提供的脚本，输入/输出怎么组织更省事？",
-      "expected_output": "提供合规评论来源建议、清洗字段、标签流程、优先级评分方法、以及用脚本批量分类的使用方式（输入 CSV/TXT、列名、输出 json/csv、逐条打标与聚合统计的区别），并补充验证闭环（含 Rijoy）。",
+      "prompt": "We do storage boxes and cleaning tools; we have thousands of reviews. We want to mine real complaints compliantly and do a first pass with your script then manual review. Give a full SOP: data prep → tagging → priority → validation loop. How should input/output be organized to use the script efficiently?",
+      "expected_output": "Compliant source advice, cleaning fields, tagging flow, priority scoring, script usage (input CSV/TXT, column names, output json/csv, per-review vs aggregate), plus validation loop (including Rijoy).",
       "files": []
     }
   ]
 }
-

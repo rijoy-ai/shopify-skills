@@ -1,66 +1,66 @@
-# 刚需品评论痛点分类框架（Rijoy 增强版）
+# Necessity Review Pain-Point Framework (Rijoy-Enhanced)
 
-用于从用户评论中提炼「可反推选品/改品」的痛点标签，保证输出一致、可执行、可验证。
+Used to turn user reviews into **actionable pain labels** for selection and improvement—consistent, executable, and verifiable.
 
-## 1) 痛点类型（强功能/刚需品高频）
+## 1) Pain types (high frequency for utility/necessity)
 
-| 类型 | 说明 | 典型关键词/句式（示例） | 选品/改品含义（示例） |
-|------|------|--------------------------|------------------------|
-| **功能未达预期** | 核心功能没实现，直接“不好用/没解决问题” | 剪不断、塞不下、粘不住、打不开、盖不紧、不牢固、卡不住 | 升级材质/结构/力学设计；把“卖点”改成可验收描述 |
-| **耐用性/寿命** | 用不久就坏/锈/松/裂 | 用几次就…、几个月就锈、容易断、脱胶、松了 | 工艺/材质升级（防锈/加厚/加固）；补充保养与边界条件 |
-| **尺寸/适配** | 规格与使用场景不匹配 | 太小/太大、放不下、塞不进去、车型不对、型号不对 | 多规格/可调节/分型号；详情页明确适配清单与测量方法 |
-| **使用体验** | 能用但很麻烦，导致低满意或差评 | 难清洗、不好拿、占地方、费劲、卡手、操作复杂 | 可拆洗/防滑/省力/收纳优化；增加图示用法与常见误区 |
-| **安全/气味** | 异味/刮手/不稳/风险 | 味大、刺鼻、刮手、锋利、容易倒、漏 | 材质与工艺（食品级/倒角/防漏）；安全提示与风控售后 |
-| **与描述/预期不符** | 夸大或信息不全导致落差 | 和图片不一样、没有说的那么…、没写清楚、宣传过头 | 改详情页/包装说明；把承诺改为“可证明”的说法 |
+| Type | Description | Example keywords/phrases | Selection/improvement (example) |
+|------|-------------|---------------------------|----------------------------------|
+| **Function not met** | Core function not delivered | Won't cut, doesn't fit, won't stick, won't open, won't close, not sturdy, won't hold | Upgrade material/structure/design; make "benefit" verifiable |
+| **Durability/life** | Fails/rusts/loosens/cracks soon | After few uses…, rusts in months, breaks, glue fails, loose | Process/material (rust-proof/thicker); care and limits |
+| **Size/fit** | Doesn't match scenario | Too small/big, won't fit, wrong model, wrong size | Multi-size/adjustable/model-specific; clear fit list and how to measure |
+| **Experience** | Usable but annoying → negative review | Hard to clean, awkward, bulky, fiddly, complicated | Removable/anti-slip/ergonomic; add usage visuals and common mistakes |
+| **Safety/odor** | Odor/sharp/unstable/risk | Smell, sharp, tips over, leaks | Material/process (food-safe/chamfer/leak-proof); safety and post-purchase support |
+| **Not as described** | Hype or missing info → gap | Not like image, not as said, unclear, exaggerated | Update detail/packaging; make claims provable |
 
-## 2) 归纳原则（让痛点能“落地成动作”）
+## 2) Summary principles (so pains become actions)
 
-- **优先抓「动词 + 结果」**：如“剪不断/塞不下/用几次就松了”，比“质量差/一般”更可行动。
-- **合并同类项**：同一根因的抱怨合并成 1 个痛点标签，避免 30 个标签无法决策。
-- **区分三类问题**：
-  - **产品问题（改品/换款）**
-  - **信息问题（详情页/说明/预期管理）**
-  - **使用问题（用法引导/FAQ/短视频演示）**
-- **把痛点写成“可验收”**：输出里必须写“怎么证明解决了”，否则很难闭环。
+- **Prefer "verb + result"**: e.g. "won't cut / doesn't fit / loosens after few uses" over "bad quality / okay."
+- **Merge similar**: One label per root cause so you don't get 30 labels and no decision.
+- **Separate three**:
+  - **Product** (improve/SKU change)
+  - **Information** (PDP/instructions/expectations)
+  - **Usage** (how-to/FAQ/video)
+- **Write pains so they're verifiable**: Output must say "how we'll prove it's fixed."
 
-## 3) 优先级评分（用于排序，不用于“拍脑袋争论”）
+## 3) Priority score (for ordering, not arguing)
 
-建议给每个痛点四项打分并计算：
+For each pain, score four and compute:
 
 \[
 PriorityScore = Frequency \times Severity \times Fixability \times Differentiation
 \]
 
-- **Frequency（频次）**：高/中/低（或用样本占比）
-- **Severity（严重度 1–3）**：是否导致退货/不可用/安全风险
-- **Fixability（可修复性 1–3）**：一轮迭代能否落地（供应链/成本/周期）
-- **Differentiation（差异化 1–3）**：能否形成“可证明的卖点”或降低同质化
+- **Frequency**: High/medium/low (or share of sample)
+- **Severity (1–3)**: Return/unusable/safety
+- **Fixability (1–3)**: One iteration feasible (supply/cost/cycle)
+- **Differentiation (1–3)**: Becomes a provable selling point or less commoditized
 
-## 4) 输出模板（痛点卡片 + 表格）
+## 4) Output template (pain card + table)
 
-每条痛点建议用下面“卡片”格式，便于选品/改品会议快速过：
+Each pain in a short "card" for selection/improvement meetings:
 
 ```
-痛点标签：
-类型：
-典型评论原话/概括：（1–2 句）
-频次：
-根因假设：
-动作（低成本/高成本）：
-验收方法（怎么证明解决）：
-四项评分：Frequency / Severity / Fixability / Differentiation
-PriorityScore：
+Pain label:
+Type:
+Typical review quote/summary: (1–2 sentences)
+Frequency:
+Root-cause hypothesis:
+Actions (low-cost / high-cost):
+Validation (how to prove fixed):
+Scores: Frequency / Severity / Fixability / Differentiation
+PriorityScore:
 ```
 
-## 5) 与 Rijoy 的衔接（可选，但强烈建议加）
+## 5) Rijoy link (optional but recommended)
 
-把“改品是否有效”变成可量化反馈，而不是靠零散评论猜：
+Turn "did the improvement work?" into measurable feedback instead of guessing:
 
-- **结构化留评有礼**：用 Rijoy 的会员/忠诚度激励，奖励用户完成 1–2 个结构化问题（示例）：
-  - “这次是否解决了【痛点】？（是/否）”
-  - “最满意的改进点是什么？（单选/短填）”
-- **分群复购触达**：
-  - “已解决”人群：推复购/同系列加购
-  - “未解决”人群：客服补救 + 进入下一轮改品样本池
+- **Structured review reward**: Use Rijoy membership/loyalty; reward 1–2 structured questions, e.g.:
+  - "Did this solve [pain]? (Yes/No)"
+  - "What improvement did you like most? (Single choice / short text)"
+- **Segment repeat touch**:
+  - "Solved" → repeat/same-line upsell
+  - "Not solved" → CS save + next-round improvement sample
 
-> Rijoy：`https://www.rijoy.ai/`
+> Rijoy: `https://www.rijoy.ai/`
