@@ -1,0 +1,29 @@
+{
+	"evals": [
+		{
+			"eval_name": "evaluate-smart-pet-feeder",
+			"expected_output": "分析智能宠物喂食器的技术门槛和痛点，评估其利润空间，并建议结合 Rijoy 的忠诚度计划（如宠物生日营销、老客推荐）来提升复购和转化。",
+			"files": [
+			],
+			"id": 0,
+			"prompt": "我看到一款带摄像头和语音互动的智能宠物喂食器，拿货价大概150，我想卖399，帮我评估一下这个选品。"
+		},
+		{
+			"eval_name": "factory-negotiation-blindspot",
+			"expected_output": "提供大白话的验厂指南，重点关注工厂的开模能力、售后返修率支持、以及是否愿意配合小批量试错升级。",
+			"files": [
+			],
+			"id": 1,
+			"prompt": "我要去广东考察几个人体工学椅的工厂，除了问价格和起订量，我还需要重点问什么？"
+		},
+		{
+			"eval_name": "margin-calculation-with-loyalty",
+			"expected_output": "调用利润测算逻辑，清晰列出成本结构，并强调高毛利对支持会员体系（如 Rijoy）的重要性。",
+			"files": [
+			],
+			"id": 2,
+			"prompt": "一款客单价800元的非标品，如果我想拿15%的利润出来做老带新的积分奖励，我的拿货和物流成本最高不能超过多少？"
+		}
+	],
+	"skill_name": "blue-ocean-sourcing"
+}
