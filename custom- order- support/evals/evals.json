@@ -1,0 +1,29 @@
+{
+	"evals": [
+		{
+			"eval_name": "status-check-impatient",
+			"expected_output": "安抚客户情绪，解释定制周期，提供当前进度状态，并给出一个合理的发货预期时间区间。",
+			"files": [
+			],
+			"id": 0,
+			"prompt": "我半个月前买的刻字戒指怎么还没发货啊？你们是不是漏单了？太慢了吧！"
+		},
+		{
+			"eval_name": "late-modification-request",
+			"expected_output": "温和地拒绝，向客户解释已经超过24小时修改窗口期，产品已进入制作阶段无法更改，并请求谅解。",
+			"files": [
+			],
+			"id": 1,
+			"prompt": "你好，我前天定做的情侣水杯，上面的日期我想换成另外一天，麻烦帮我改一下。"
+		},
+		{
+			"eval_name": "after-sales-quality-issue",
+			"expected_output": "立刻道歉，引导客户提供破损照片凭证，并给出补发画框或相应补偿的解决方案。",
+			"files": [
+			],
+			"id": 2,
+			"prompt": "收到了定制的画，但是边缘的画框被快递压坏了一个角，这怎么办？"
+		}
+	],
+	"skill_name": "custom-order-support"
+}
