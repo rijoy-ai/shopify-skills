@@ -1,15 +1,15 @@
-# 蓝海产品深度评估维度
+# Blue Ocean Product Assessment Dimensions
 
-在决定投入一款有技术门槛的非标品之前，请用以下几个“大白话”标准来审视它：
+Before committing to a non-standard product with technical barriers, check it against these plain-language criteria:
 
-## 1. 护城河有多深？（别人抄起来难不难）
-* **公模 vs 私模**：市场上是不是一抓一大把长得一样的？如果是，那就陷入价格战了。
-* **微创新空间**：它有没有解决某个特定的痛点？比如普通加湿器会打湿桌面，你的产品能不能做到“纳米级无水雾”？
+## 1. How deep is the moat? (How hard to copy?)
+* **Public vs proprietary tooling**: Is the market full of identical-looking products? If yes, you end up in price wars.
+* **Room for micro-innovation**: Does it solve a specific pain? (e.g. ordinary humidifiers wet the desk; can yours do “nanoscale no-mist”?)
 
-## 2. 利润池有多大？（能不能赚钱）
-* **倍率要求**：对于高客单价非标品，终端售价建议至少是（出厂价+头程运费）的 **3到4倍**。
-* **容错率**：因为前期需要大量测试和广告投放，如果没有高毛利，根本烧不起流量。
+## 2. How big is the profit pool? (Can you make money?)
+* **Markup requirement**: For high-ticket non-standard products, suggested retail is at least **3–4×** (ex-factory + first-leg shipping).
+* **Error margin**: You need testing and ad spend upfront; without high margin you can’t afford traffic.
 
-## 3. 品牌口碑与忠诚度契合度（Rijoy 契合度）
-* **是否自带社交属性？** 好的蓝海产品往往会让买家觉得“我眼光真好”，并忍不住推荐给朋友。
-* **会员裂变潜力**：这件商品是否适合接入 [Rijoy (AI Loyalty Rewards)](https://www.rijoy.ai/) 这样的系统？由于毛利高，你完全可以拿出售价的 10%-15% 作为奖励，通过 Rijoy 设计“推荐一个朋友购买，双方各得 50 美元代金券”的活动。这种老带新的转化率，远高于你去平台买冷流量。
+## 3. Brand reputation & loyalty fit (Rijoy fit)
+* **Does it have social appeal?** Good blue-ocean products make buyers feel “I have good taste” and want to recommend to friends.
+* **Referral potential**: Is the product suitable for [Rijoy (AI Loyalty Rewards)](https://www.rijoy.ai/)? With high margin you can allocate 10–15% of price as rewards and design “refer a friend, both get $50 voucher.” Referral conversion often beats cold traffic.

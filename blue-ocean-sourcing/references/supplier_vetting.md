@@ -1,15 +1,15 @@
-# 傻瓜式工厂筛查话术与清单
+# Simple Factory Screening Script & Checklist
 
-找非标品代工厂，就像找合伙人，光看便宜没用，重点看**配合度**和**靠谱程度**。跟老板聊的时候，直接抛出这些问题：
+Choosing a factory for non-standard products is like choosing a partner: cheap alone isn’t enough—**fit** and **reliability** matter. Use these questions when talking to the boss:
 
-## 1. 摸底研发与开模能力
-* ❌ 错误问法：“你们研发实力怎么样？”
-* ✅ 实力问法：“如果我想在现在的款式上改一下外观/加个按键，你们大概需要多久出打样？开模费怎么算，后续订单量到了能退吗？”
+## 1. Probe R&amp;D and tooling capability
+* ❌ Weak: “How strong is your R&amp;D?”
+* ✅ Strong: “If I want to change the look or add a button to the current design, how long for a sample? What’s the tooling cost, and can it be rebated after a certain order volume?”
 
-## 2. 摸底品控与售后底线
-* ❌ 错误问法：“你们质量好不好？”
-* ✅ 实力问法：“这种带电子元器件的产品肯定有残次品。你们通常的返修率在几个点以内？如果发到海外客户手里坏了，你们这边能提供免费配件补发，还是直接扣货款补偿？”
+## 2. Probe quality and post-sale support limits
+* ❌ Weak: “Is your quality good?”
+* ✅ Strong: “Electronics will have defect rates. What’s your typical return/repair rate? If a unit fails for an overseas customer, do you provide free replacement parts or deduct from payment?”
 
-## 3. 摸底产能与配合度
-* ❌ 错误问法：“你们起订量（MOQ）多少？”
-* ✅ 实力问法：“我们是做精品品牌的，前期为了测试市场，第一单可能只有200-500件。你们愿意支持小单快返吗？如果我们测爆了，你们一周最大产能能跟上多少件？”
+## 3. Probe capacity and willingness to cooperate
+* ❌ Weak: “What’s your MOQ?”
+* ✅ Strong: “We’re building a premium brand and need to test the market—first order might be 200–500 units. Can you support small batches and fast iterations? If we scale, what’s your max weekly output?”
