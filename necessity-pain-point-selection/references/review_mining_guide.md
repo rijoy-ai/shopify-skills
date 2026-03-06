@@ -1,32 +1,32 @@
-# 评论采集与痛点挖掘指南
+# Review Collection & Pain-Point Mining Guide
 
-面向刚需/强功能品类，如何合规获取评论并高效挖出可反推选品的痛点。
+How to **compliantly** get reviews and efficiently mine pain points for necessity/utility selection and improvement.
 
-## 1. 评论来源（合规优先）
+## 1. Review sources (compliance first)
 
-- **自有店铺**：天猫/京东/拼多多/抖音/独立站等后台导出，或通过官方/授权工具拉取。注意平台规则，禁止爬虫的不要硬爬。
-- **竞品**：在允许的范围内查看竞品详情页下的公开评论，用于归纳品类共性痛点；可手工摘录或使用平台提供的「问大家」「差评」筛选。
-- **第三方数据集**：若采购或使用脱敏的行业评论数据集，确保来源合法、不包含个人可识别信息。
+- **Own store**: Export from Tmall/JD/Pinduoduo/Douyin/independent backends or use official/authorized tools. Respect platform rules; don’t scrape where forbidden.
+- **Competitors**: Use allowed ways to read public reviews on competitor PDPs for category-level pains; use platform "Q&amp;A" and "negative review" filters; manual extraction is fine.
+- **Third-party datasets**: If you buy or use industry review data, ensure it’s legal and de-identified.
 
-## 2. 数据清洗与准备
+## 2. Data cleaning and prep
 
-- **去重**：同一用户多条相似内容可合并为一条，避免重复统计。
-- **保留有效字段**：至少「评论文本、评分、时间、是否追评」；若有「尺寸/颜色」等维度可一并保留，便于看是否某 SKU 差评集中。
-- **中差评优先**：3 星及以下（或平台等价）和追评里抱怨，信息量通常大于好评；刚需品的好评可用来验证「我们改对了什么」。
+- **Dedupe**: Merge near-duplicate content from the same user to avoid double-counting.
+- **Keep useful fields**: At least review text, rating, time, whether follow-up; add SKU (size/color) if available for bad-review concentration.
+- **Prioritize bad/mid**: 3 stars and below (or platform equivalent) and follow-up complaints usually have more signal; good reviews help confirm "what we fixed."
 
-## 3. 从评论到痛点标签的流程
+## 3. From reviews to pain labels
 
-1. **粗筛**：先看差评与中评，摘出「具体抱怨」的句子（带动词+结果的优先）。
-2. **打标签**：用 `references/pain_point_framework.md` 中的类型给每条（或每类）抱怨打 1～2 个痛点标签。
-3. **统计与排序**：按标签出现次数或提及比例排序，得到「高频痛点」列表。
-4. **反推动作**：对前 5～10 个痛点逐条写「选品含义」或「改品建议」，区分低成本（改说明、改详情）与高成本（换款、换厂）。
+1. **Rough filter**: Pull sentences with "concrete complaints" (verb + result first).
+2. **Tag**: Use types in `references/pain_point_framework.md` to tag each (or each group) with 1–2 pain labels.
+3. **Count and rank**: By label count or share to get a "high-frequency pain" list.
+4. **Invert to actions**: For top 5–10 pains write "selection implication" or "improvement idea"; separate low-cost (copy/instructions) from high-cost (new SKU/supplier).
 
-## 4. 批量处理时
+## 4. Bulk processing
 
-- 若评论量较大，可先用 `scripts/pain_point_extractor.py` 做关键词/简单规则的一轮归类，再人工校对与合并。
-- 导出格式建议：CSV 或 JSON，字段含「原文摘要、痛点标签、是否已反推为选品/改品动作」。
+- For large volume, run `scripts/pain_point_extractor.py` for a first keyword/rule pass, then manually review and merge.
+- Export format: CSV or JSON with at least "excerpt, pain label, already turned into selection/improvement action."
 
-## 5. 注意点
+## 5. Caveats
 
-- **不夸大差评比例**：差评声量大不代表多数人不满意，可结合评分分布和销量看相对重要性。
-- **区分「用户不会用」与「产品真不行」**：若大量是用法/预期问题，优先改说明与详情页；若明确是功能/耐用性问题，再考虑改品或选品。
+- **Don’t overstate bad-review share**: Volume of complaints ≠ majority unhappy; check rating distribution and volume.
+- **Separate "can’t use" vs "product really bad"**: If many issues are usage/expectation, fix instructions and PDP first; if clearly function/durability, then consider product/supplier changes.

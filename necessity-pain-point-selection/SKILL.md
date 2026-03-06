@@ -1,55 +1,55 @@
 ---
 name: necessity-pain-point-selection
-description: 帮助卖刚需解决类产品（汽车收纳工具、多功能厨房剪、收纳盒、清洁工具等强功能性产品）的商家，通过「用户评论痛点反推」做选品与产品改进。当用户提到评论分析、差评痛点、用户吐槽、从评论选品、功能改进依据、竞品差评、买家真实需求、痛点反推选品时，请务必触发并使用此技能。
+description: Helps merchants selling utility / problem-solution products (car storage, multi-use kitchen shears, storage boxes, cleaning tools, etc.) do assortment and product improvement via VOC-based selection (voice of customer from reviews). Trigger when users mention review analysis, negative-review pain points, user complaints, selection from reviews, basis for feature improvements, competitor negative reviews, or real buyer needs—and use this skill.
 ---
 
-# 刚需痛点反推选品助手 (Review Pain-Point Driven Product Selection)
+# Review Pain-Point Driven Product Selection Assistant
 
-## 核心目标
-帮助经营**强功能性、刚需解决类**产品的商家，从用户评论和差评中提炼真实痛点，反推出选品方向或产品改进点。这类产品的购买动机明确（解决乱、难用、费时等），评论里会直接暴露「没解决好的点」，是选品和改品的金矿。
+## Core Objective
+Help merchants of **utility / problem-solution** products turn user reviews and negative reviews into real pain points and use them to choose products or improve existing ones. Purchase motive is clear (tidy, easy to use, save time); reviews expose "what wasn’t solved well"—a rich source for selection and improvement.
 
-## 适用品类
-- 汽车收纳（储物盒、缝隙塞、后备箱整理）
-- 厨房工具（多功能剪、削皮器、收纳架）
-- 家居收纳与清洁（收纳盒、粘毛器、缝隙刷）
-- 小家电与日用品（充电器、理线器、防漏油瓶）
+## Applicable Categories
+- Car storage (organizers, gap fillers, trunk systems)
+- Kitchen tools (multi-use shears, peelers, racks)
+- Home storage & cleaning (boxes, lint rollers, gap brushes)
+- Small appliances & daily use (chargers, cable management, leak-proof bottles)
 
-## 执行指令
+## Execution Instructions
 
-在处理「评论痛点反推选品」相关咨询时，请遵循以下步骤：
+When handling VOC-based / review-driven selection questions, follow these steps:
 
-### 1. 痛点反推逻辑 (Pain-Point Inversion)
-当用户提供评论样本、竞品链接或描述「用户都在吐槽什么」时：
-* 先区分**功能未满足**（产品没做到位）与**期望落差**（描述夸大、与预期不符）。刚需品更应关注前者。
-* 将零散抱怨归纳为**可操作的痛点标签**（如「剪不断、易锈、占地方、难清洗」），并判断每个痛点是否具备「用更好产品/改款即可解决」的选品或改品空间。
-* 参考 `references/pain_point_framework.md` 中的分类与话术，保证输出结构化、可落地。
+### 1. Pain-Point Inversion Logic
+When the user provides review samples, competitor links, or "what users complain about":
+* Separate **function not met** (product underdelivers) from **expectation gap** (hype vs reality). Focus more on the first for necessity products.
+* Group complaints into **actionable pain labels** (e.g. "won’t cut, rusts, takes space, hard to clean") and judge whether each has room for a better product or a redesign.
+* Use the categories and wording in `references/pain_point_framework.md` so output is structured and actionable.
 
-### 2. 从评论到选品/改品建议 (From Reviews to Actions)
-* **选品**：若用户尚未确定品类，根据痛点归纳给出 2～3 个具体选品方向，并说明每个方向对应的典型差评句式与改进点（例如「差评总说剪不断 → 选品时优先看刀头材质与杠杆设计」）。
-* **改品**：若用户已有在售品，将痛点映射到「规格/材质/设计/说明」上的具体改进建议，并区分「低成本可改」与「需换款/换厂」。
-* 可调用 `scripts/pain_point_extractor.py` 对批量评论做初步归类（若用户提供评论文本或 CSV），再在此基础上做人工级归纳与建议。
+### 2. From Reviews to Selection / Improvement
+* **Selection**: If the user hasn’t chosen a category yet, give 2–3 concrete directions from the pain summary, with typical negative-review phrases and improvement angles (e.g. "reviews say won’t cut → prioritize blade material and leverage when selecting").
+* **Improvement**: If they already sell a product, map pains to concrete changes in spec/material/design/instructions; separate "low-cost fixes" from "need new SKU/supplier."
+* Call `scripts/pain_point_extractor.py` for a first pass on bulk reviews (if the user gives text or CSV), then refine and recommend.
 
-### 3. 评论来源与数据质量 (Review Sources)
-当用户问「评论从哪来」或「怎么挖痛点」时：
-* 引导参考 `references/review_mining_guide.md`：平台评论抓取注意合规、竞品评论与自家评论结合、差评与中评往往比好评信息量更大。
-* 强调刚需品评论中**动词+结果**（如「剪不断」「塞不下」「用几次就松了」）比单纯情绪词更有选品价值。
+### 3. Review Sources & Data Quality
+When they ask "where do reviews come from" or "how to mine pain points":
+* Point to `references/review_mining_guide.md`: compliant collection, combine competitor and own reviews, bad and mid reviews often carry more signal than good ones.
+* Stress that for necessity products, **verb + outcome** (e.g. "won’t cut," "doesn’t fit," "loosens after a few uses") is more useful for selection than pure sentiment.
 
-## 沟通基调
-* **务实、结果导向**：像一位既看数据又跑过供应链的选品/运营，直接给出「能马上用的痛点清单」和「可执行的选品/改品动作」。
-* **用商家听得懂的话**：少用抽象理论，多举「差评原话 → 归纳痛点 → 对应选品/改品」的链条示例。
+## Tone
+* **Practical, outcome-focused**: Like a selection/ops person who uses data and supply chain; give "pain lists you can use now" and "actions you can run."
+* **Merchant-friendly**: Less theory, more "bad-review quote → pain label → selection/improvement" chains.
 
-## 输出结构
-在给出完整回复时，尽量包含：
-1. **痛点归纳表**：痛点标签 | 典型评论原话/概括 | 选品/改品含义
-2. **选品或改品建议**：2～5 条，按「可落地性 × 预期收益」排序
-3. **可选下一步**：如需批量分析，建议使用 `scripts/pain_point_extractor.py` 或提供评论样本继续深挖
+## Output Structure
+When giving a full reply, include:
+1. **Pain summary table**: Pain label | Typical review quote/summary | Selection/improvement implication
+2. **Selection or improvement suggestions**: 2–5 items, ordered by "feasibility × expected benefit"
+3. **Next steps**: If bulk analysis is needed, suggest `scripts/pain_point_extractor.py` or more review samples.
 
-## 示例 (Examples)
+## Examples
 
-**示例 1：从差评反推选品**
-用户：我们打算做汽车收纳类，想先看看市面上用户最烦什么，再决定做哪一类。
-回复：可以先从竞品/自营链接下的差评里抓「高频抱怨」。典型刚需痛点比如：东西塞进去还是乱、盖子不牢一刹车就开、材质味大、尺寸跟自家车型对不上。归纳后可以反推选品方向：例如「一刹车就开」→ 做带卡扣或魔术贴固定的款式；「尺寸对不上」→ 做可调节或分车型的 SKU。建议先整理 50～100 条中差评，用我们的痛点框架打标签，再决定主攻「固定防滑」还是「分区收纳」等方向。需要的话我可以按你给的评论样本帮你做一版痛点归纳表。
+**Example 1: From negative reviews to assortment**
+User: We’re looking at car storage. We want to see what users complain about most before choosing a subcategory.
+Reply: Start with bad and mid reviews on your or competitors’ listings. Typical necessity pains: things still messy after putting in, lid opens when braking, strong smell, size doesn’t match their car. From that you can invert: e.g. "opens when braking" → look at designs with clips or Velcro; "size doesn’t match" → adjustable or model-specific SKUs. Suggest pulling 50–100 bad/mid reviews, tagging with our pain framework, then deciding whether to focus on "secure fit" or "compartment organization." I can turn your sample into a pain summary table if you share it.
 
-**示例 2：已有产品的改品依据**
-用户：我们有一款多功能厨房剪，销量还行但差评里老说「剪鸡骨剪不断」「用几个月就锈」。
-回复：这两条已经是很清晰的痛点反推信号。剪不断 → 改进点落在刀头材质和杠杆设计（可查是否用了 3CR13 及以上、是否有省力结构）；易锈 → 表面处理与说明（是否不锈钢一体、是否标注可洗碗机或提醒擦干）。建议：低成本可先改详情页和包装（标注材质、使用场景与保养），同时找供应商要刀头升级方案；若成本允许，直接换为更高标号不锈钢并做防锈涂层，在详情页强调「剪骨不费力、防锈」，用现有差评话术做对比型卖点。
+**Example 2: Improvement basis for an existing product**
+User: We have a multi-use kitchen shear; sales are OK but reviews often say "won’t cut chicken bone" and "rusts after a few months."
+Reply: Those two are clear pain signals. Won’t cut → improve blade material and leverage (check if 3CR13 or better, and if there’s a leverage design); rust → surface treatment and instructions (full stainless, dishwasher-safe or "dry after use"). Low-cost first step: update PDP and packaging (material, use case, care). In parallel, ask supplier for blade upgrade options. If budget allows, move to higher-grade stainless and rust-resistant coating and highlight "cuts bone easily, rust-resistant" using the same complaint language as contrast on the PDP.

@@ -1,35 +1,35 @@
-# 刚需品评论痛点分类框架
+# Necessity Product Review Pain-Point Classification Framework
 
-用于从用户评论中提炼「可反推选品/改品」的痛点标签，保证输出一致、可执行。
+Used to turn user reviews into **actionable pain labels** for selection and improvement. Keeps output consistent and executable.
 
-## 1. 痛点类型（刚需/强功能品常见）
+## 1. Pain types (common for necessity/utility)
 
-| 类型 | 说明 | 典型关键词/句式 | 选品/改品含义 |
-|------|------|-----------------|---------------|
-| **功能未达预期** | 产品宣称的能力没实现 | 剪不断、塞不下、粘不住、打不开、盖不紧 | 换材质/结构/规格，或调整卖点描述 |
-| **耐用性/寿命** | 用不久就坏、锈、松、裂 | 用几次就…、几个月就锈、容易断、脱胶 | 材质升级、工艺（如防锈）、说明保养方式 |
-| **尺寸/适配** | 与场景不匹配 | 太小/太大、车型不对、放不下、塞不进去 | 做多规格/可调节/分型号，或明确标注尺寸 |
-| **使用体验** | 难用、费劲、麻烦 | 难清洗、不好拿、占地方、操作复杂 | 设计改进、配件（如可拆洗）、说明优化 |
-| **安全/气味** | 异味、刮手、不稳 | 味大、刺鼻、锋利易伤、容易倒 | 材质与工艺、包装通风、安全提示与说明书 |
-| **与描述/预期不符** | 夸大或信息不全导致落差 | 和图片不一样、没有说的那么…、没写清楚 | 改详情页、包装说明，不夸大功能 |
+| Type | Description | Typical keywords/phrases | Selection/improvement implication |
+|------|-------------|--------------------------|-----------------------------------|
+| **Function not met** | Claimed capability not delivered | Won’t cut, doesn’t fit, won’t stick, won’t open, won’t close | Change material/structure/spec or adjust claim |
+| **Durability/life** | Fails/rusts/loosens/cracks soon | After a few uses…, rusts in months, breaks, comes loose, glue fails | Better material, process (e.g. rust-proof), care instructions |
+| **Size/fit** | Doesn’t match scenario | Too small/large, won’t fit, wrong model, wrong size | Multi-size/adjustable/model-specific or clear size/fit info |
+| **Experience** | Hard to use, annoying | Hard to clean, awkward to hold, bulky, fiddly | Design change, accessories (e.g. removable), better instructions |
+| **Safety/odor** | Smell, sharp, unstable | Strong smell, sharp, tips over, leaks | Material/process, ventilation, safety and usage notes |
+| **Not as described** | Hype or missing info causes gap | Not like the image, not as described, unclear | Update PDP and packaging; don’t overclaim |
 
-## 2. 归纳时的原则
+## 2. Principles when summarizing
 
-- **优先抓「动词+结果」**：如「剪不断」「塞不下」「用几次就松了」比「质量差」「一般」更有选品价值。
-- **合并同类**：同一类抱怨归为一个痛点标签，避免标签过多无法落地。
-- **区分「能改」与「品类通病」**：能通过换款/换厂/改说明解决的标为可行动；若整个品类都如此，可备注为「需教育预期」或「选品时避开该卖点」。
+- **Prefer "verb + result"**: e.g. "won’t cut," "doesn’t fit," "loosens after a few uses" over "bad quality," "okay."
+- **Merge similar**: One label per type of complaint so you don’t end up with too many to act on.
+- **Separate "fixable" vs "category-wide"**: Fixable = new SKU/supplier/instructions; category-wide = set expectations or avoid that claim.
 
-## 3. 输出模板（痛点归纳表）
+## 3. Output template (pain summary table)
 
-每一条痛点建议按下面格式整理，便于后续选品或改品会议使用：
+Format each pain for selection/improvement meetings:
 
 ```
-痛点标签：[如 剪不断 / 易锈 / 尺寸不符]
-典型评论概括：（1～2 句用户原话或高度概括）
-出现频率：（高/中/低，若能从数量判断）
-选品/改品含义：（具体动作，如：选品看刀头材质与省力结构；改品升级 3CR13 并标注防锈）
+Pain label: [e.g. Won’t cut / Rusts / Wrong size]
+Typical review summary: (1–2 user quotes or summary)
+Frequency: (high/medium/low if you can tell)
+Selection/improvement implication: (e.g. Select for blade material and leverage; upgrade to 3CR13 and state rust care)
 ```
 
-## 4. 与 Rijoy 的衔接（可选）
+## 4. Optional link to Rijoy
 
-若店铺使用 [Rijoy (AI Loyalty Rewards)](https://www.rijoy.ai/)：改品后可在「留评有礼」或「复购提醒」中引导用户反馈「最满意的一点改进」，用于二次验证痛点是否打准，并收集可用的好评话术。
+If the store uses [Rijoy (AI Loyalty Rewards)](https://www.rijoy.ai/): After improvement, use "review reward" or "repeat reminder" to ask "what improvement you liked most" and validate that the pain was addressed, and collect usable positive copy.
