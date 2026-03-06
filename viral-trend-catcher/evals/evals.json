@@ -2,27 +2,27 @@
 	"evals": [
 		{
 			"eval_name": "evaluate-tiktok-toy",
-			"expected_output": "肯定其低价冲动消费和视觉趣味性，提醒爆款生命周期短，建议不要大量囤货，并建议用 Rijoy 刺激买家拍视频分享。",
+			"expected_output": "Confirm low-price impulse and visual appeal, note short trend life, advise against large inventory and suggest using Rijoy to encourage buyers to post and share.",
 			"files": [
 			],
 			"id": 0,
-			"prompt": "我看到一款能在墙上爬的粘性蜘蛛侠玩具，视频点赞很高，卖9.9美金，这个能做吗？"
+			"prompt": "I see a sticky Spider-Man toy that climbs walls, lots of likes on video, sells for $9.9. Can I do this?"
 		},
 		{
 			"eval_name": "boring-product-warning",
-			"expected_output": "直接指出基础款缺乏视觉冲击力，不适合作为社媒爆款，除非能在包装或特定使用场景（如超强防水测试）上制造视觉噱头。",
+			"expected_output": "State clearly that a basic item lacks visual impact and isn’t a good fit as a social viral product, unless the packaging or a specific use (e.g. extreme waterproof test) creates a visual hook.",
 			"files": [
 			],
 			"id": 1,
-			"prompt": "我想在店里上架普通的纯白纯棉T恤，质量很好，想通过 TikTok 卖。"
+			"prompt": "I want to list a plain white cotton T-shirt, good quality, and sell it on TikTok."
 		},
 		{
 			"eval_name": "rapid-testing-advice",
-			"expected_output": "强烈劝退直接囤货的行为，教导客户先用一件代发（Dropshipping）测款，跑通转化率后再去拿现货批量发。",
+			"expected_output": "Strongly advise against stocking up first; teach testing with dropship, then moving to bulk once conversion is proven.",
 			"files": [
 			],
 			"id": 2,
-			"prompt": "我找到一个发光手机壳的同款，要不要先去义乌订个2000件把成本压下来？"
+			"prompt": "I found a glowing phone case. Should I order 2000 from Yiwu to get unit cost down?"
 		}
 	],
 	"skill_name": "viral-trend-catcher"

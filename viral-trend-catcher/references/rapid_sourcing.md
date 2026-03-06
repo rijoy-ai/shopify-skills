@@ -1,17 +1,20 @@
-# 极速测款避坑指南（千万别盲目囤货！）
+# Fast Testing Pitfall Guide (Don’t Stock Blind!)
 
-做社媒爆款，最容易死在“压库存”上。爆款来得快去得也快，你的供应链必须像一阵风一样快。
+With social hits, the biggest risk is **inventory**. Trends spike and fade; your supply chain has to move fast.
 
-## 1. 测款阶段（空手套白狼）
-* **不要进货！不要进货！**
-* 先去速卖通（AliExpress）或者代发平台（如 CJ Dropshipping）找同款图片。
-* 把图片挂到你自己的 Shopify 店铺里，花几十美金跑一下短视频广告。
-* 如果有人下单，你就去代发平台替客户买，让他们直接发给客户。虽然这个时候你可能不赚钱甚至亏点运费，但你测试出了**这个品真的能卖出去**！
+## 1. Test phase (no inventory)
 
-## 2. 爆发阶段（拿现货稳发货）
-* 当你发现一天能稳定出 10 单、20 单了，立刻去 1688 找源头工厂。
-* 拍几百件现货发到你合作的海外仓或者专线物流。
-* 这个时候你再把价格稍微抬一点，物流速度也上来了，利润就出来了。
+* **Don’t order stock. Don’t.**
+* Find the same product on AliExpress or a dropship platform (e.g. CJ Dropshipping) by image.
+* List it on your Shopify store and run a small video ad (tens of dollars).
+* When someone orders, buy from the dropship platform and have it shipped to the customer. You may lose a bit on shipping, but you learn **that this product actually sells**.
 
-## 3. 规避侵权坑
-* 影视动漫 IP（比如米老鼠、漫威）、大牌 Logo 绝对碰不得。平台一旦查到侵权，直接封店封资金。
+## 2. Scale phase (stock for speed)
+
+* When you see stable volume (e.g. 10–20 orders/day), go to 1688 for the source factory.
+* Order a few hundred units to your overseas warehouse or shipping partner.
+* Then raise price a bit and improve shipping; margin appears.
+
+## 3. Avoid IP risk
+
+* Don’t touch film/animation IP (e.g. Disney, Marvel) or big brand logos. Platforms can suspend store and funds for IP violation.

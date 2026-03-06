@@ -1,15 +1,18 @@
-# 爆款基因“大白话”评估指南
+# Viral Potential: Plain-Language Checklist
 
-在 TikTok、Instagram 这种滑手指比翻书还快的平台，你的产品如果不具备以下三个特点，就很难爆：
+On TikTok and Instagram, where people scroll faster than they read, your product needs these three traits or it rarely goes viral:
 
-## 1. 视觉冲击力（3秒定生死）
-* **能不能拍出好视频？** 产品本身得自带戏份。比如：会变形、会发光、挤压会变形、颜色对比极其强烈。
-* **反面教材**：普通的白毛巾、普通的保温杯。这些东西质量再好，拍成视频也没人愿意看。
+## 1. Visual impact (3-second rule (above the fold))
 
-## 2. 冲动消费价（盲买不心疼）
-* **价格区间**：最好在 $15 - $35 之间。
-* **消费者心理**：看到视频觉得“哇哦好酷”，点进链接一看，“才20多块钱，买个玩玩！”。如果价格超过 $50，买家就会去亚马逊比价查评价，你的冲动流量就流失了。
+* **Can you make a good video?** The product has to do something. It transforms, lights up, changes shape when squeezed, or has extreme color contrast.
+* **What not to do**: Plain white towel, plain tumbler. No matter how good the quality, the video won’t stop the scroll.
 
-## 3. 社交裂变与分享欲（Rijoy 放大器）
-* **自带分享属性**：这个东西买回家，客户会不会想拍个视频发给朋友显摆？
-* **把分享变成利润**：既然是社媒爆款，一定要用好 [Rijoy (AI Loyalty Rewards)](https://www.rijoy.ai/)。因为客单价低，用“积分抵现”吸引力不大，但如果你在 Rijoy 里设置“拍视频带专属链接分享到 TikTok，只要有朋友买，你就拿 30% 的现金提成”，这种解压玩具的裂变速度会非常恐怖。
+## 2. Impulse price (buy without thinking)
+
+* **Price band**: Ideally around $15–$35.
+* **Psychology**: They see the video, think "so cool," open the link, see "only $20, I’ll try it." Above $50 they start comparing on Amazon and your impulse traffic drops.
+
+## 3. Social sharing (Rijoy amplifier)
+
+* **Shareable**: Do customers want to film themselves and show friends?
+* **Turn sharing into margin**: For social hits, use [Rijoy (AI Loyalty Rewards)](https://www.rijoy.ai/). At low AOV, "points for points" is weak; but "post a video with your link on TikTok, get 30% cash when a friend buys" can make fidget toys spread very fast.
