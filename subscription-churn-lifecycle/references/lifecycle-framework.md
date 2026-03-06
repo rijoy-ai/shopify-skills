@@ -1,39 +1,38 @@
-## 订阅制产品生命周期与防流失框架
+## Subscription Lifecycle and Churn-Prevention Framework
 
-本文件为 `subscription-churn-lifecycle` 技能提供通用框架，帮助在不同品类下保持结构一致、思考完整。
+This file gives the `subscription-churn-lifecycle` skill a shared framework so structure stays consistent across categories.
 
-### 一、典型订阅生命周期阶段
+### 1. Typical subscription lifecycle stages
 
-可以按时间和心理状态结合来拆解：
+By time and psychology:
 
-1. **决策与首订阶段**：被种草/了解 → 决定尝试订阅 → 选择档位与周期。
-2. **首用/首开箱阶段**：第一次收货/开箱/使用，对“是否值得继续订阅”的第一印象非常关键。
-3. **习惯养成阶段**：产品逐渐融入日常生活或工作节奏，减少“忘记用/懒得用”。
-4. **价值评估与对比阶段**：用户开始对比“我每月付的钱 vs 实际得到的价值/快乐/节省时间”。
-5. **疲劳/变化阶段**：审美疲劳、堆货、口味/需求变化、生活节奏变化等开始出现。
-6. **续费/降级/暂停/取消决策节点**：用户在即将扣费、用量变化或遇到问题时做出新的选择。
-7. **流失后休眠与潜在回流阶段**：用户不再续费，但在特定节点（季节、人生阶段变化）仍可能回流。
+1. **Decision and first subscribe**: Awareness → decide to try → choose plan and rhythm.
+2. **First use / first unbox**: First delivery and use; first impression of "worth renewing?"
+3. **Habit**: Product fits into daily routine; less "forget to use."
+4. **Value check**: User compares "what I pay per month vs value / enjoyment / time saved."
+5. **Fatigue and change**: Boredom, stockpile, taste/life change.
+6. **Renew / downgrade / pause / cancel**: Before charge, at volume change, or when there’s a problem.
+7. **Post-churn and potential return**: No longer subscribed but may return at life/season triggers.
 
-### 二、三条关键“犹豫路径”
+### 2. Three main churn paths
 
-订阅流失通常可以归类为三条路径：
+Churn often fits three paths:
 
-1. **“试一试就走”型**：首订后体验尚可，但缺乏足够的理由继续订阅。
-2. **“堆货/用不完”型**：产品本身不错，但和实际节奏不匹配，心理压力和浪费感驱动取消。
-3. **“不再适配我”型**：口味/偏好/生活阶段变化，原来的订阅不再是最佳选择。
+1. **"Try once and leave"**: First cycle OK but not enough reason to continue.
+2. **"Stockpile / can’t use it all"**: Product is fine but doesn’t match real rhythm; guilt and waste drive cancel.
+3. **"No longer for me"**: Taste/life stage changed; current subscription isn’t the best fit.
 
-技能在做诊断时，应明确指出当前业务在哪些路径上流失最多，并对应提出：
+When diagnosing, say which path(s) matter most and then:
 
-- 在哪一个生命周期阶段可以提前介入？
-- 可以通过哪些信息、机制或产品调整，减少这条路径上的流失？
+- At which lifecycle stage can you intervene earlier?
+- What information, mechanics, or product changes reduce churn on that path?
 
-### 三、订阅维度的关键参数
+### 3. Key subscription dimensions
 
-在分析与设计方案时，建议总是关注以下维度：
+When analyzing and designing, always consider:
 
-- **订阅节奏**：按周/月/季/年，是否允许跳过/暂停。
-- **内容/商品更新频率**：每期更换程度、是否支持个性化偏好。
-- **订阅承诺与可调节性**：是否可以轻松变更档位/周期/品类组合。
-- **取消难易度与体验**：取消流程是否透明尊重、是否解释后果与替代方案。
-- **价格与感知价值**：单价/周期价 vs 用户心中对“值得”的判断。
-
+- **Rhythm**: Weekly/monthly/quarterly/yearly; skip/pause allowed?
+- **Content/product refresh**: How much changes each cycle; personalization?
+- **Commitment and flexibility**: How easy to change plan/rhythm/mix?
+- **Cancel flow and experience**: Transparent and respectful; explain consequences and alternatives?
+- **Price and perceived value**: Price per cycle vs user’s sense of "worth it."

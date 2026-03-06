@@ -11,21 +11,21 @@ from typing import Dict, List
 
 
 RETENTION_METRICS: Dict[str, List[str]] = {
-    "结果指标": [
-        "首月留存率（M1）",
-        "第 2 / 第 3 个月留存率（M2/M3）",
-        "平均订阅周期数",
-        "订阅生命周期 LTV/CLV",
-        "整体取消率（按周期）",
-        "回流率（流失后再次订阅）",
+    "Outcome metrics": [
+        "First-month retention (M1)",
+        "Month-2 / Month-3 retention (M2/M3)",
+        "Average subscription cycles",
+        "Subscription LTV/CLV",
+        "Overall cancel rate (by cycle)",
+        "Win-back rate (churned who re-subscribe)",
     ],
-    "过程指标": [
-        "Onboarding 内容打开/点击率",
-        "首用/开箱完成率",
-        "周期内使用天数/频次",
-        "账单预告打开/点击率",
-        "取消原因表单填写率",
-        "挽回/回流活动响应率与转化率",
+    "Process metrics": [
+        "Onboarding content open/click rate",
+        "First use/unbox completion rate",
+        "Use days/frequency per cycle",
+        "Billing preview open/click rate",
+        "Cancel reason form completion rate",
+        "Win-back/return campaign response and conversion",
     ],
 }
 
@@ -36,7 +36,7 @@ def as_markdown_table() -> str:
     embedded into skill outputs.
     """
     lines: List[str] = []
-    lines.append("| 指标类型 | 指标 | 当前数据/估计值 | 目标值 | 备注 |")
+    lines.append("| Metric type | Metric | Current/estimate | Target | Notes |")
     lines.append("| --- | --- | --- | --- | --- |")
 
     for metric_type, items in RETENTION_METRICS.items():
@@ -48,4 +48,3 @@ def as_markdown_table() -> str:
 
 if __name__ == "__main__":
     print(as_markdown_table())
-

@@ -31,7 +31,7 @@ def generate_lifecycle_plan(
     Generate a lifecycle execution plan.
 
     :param focus_areas: Optional list of high-level focus areas
-                        (e.g., ["Onboarding", "预续费提醒", "挽回与回流"]).
+                        (e.g. ["Onboarding", "Pre-renewal reminder", "Win-back"]).
                         If omitted, a default sequence will be used.
     :param weeks: Number of weeks to plan for (4–8 is recommended).
     """
@@ -39,27 +39,27 @@ def generate_lifecycle_plan(
         raise ValueError("weeks must be positive")
 
     default_focus = [
-        "订阅模型与数据诊断",
-        "Onboarding 与首期体验优化",
-        "使用场景教育与习惯养成",
-        "预续费提醒与价值重申",
-        "取消路径与原因收集优化",
-        "挽回与回流实验",
+        "Subscription model and data diagnosis",
+        "Onboarding and first-cycle experience",
+        "Usage context and habit building",
+        "Pre-renewal reminder and value recap",
+        "Cancel path and reason collection",
+        "Win-back and return experiments",
     ]
 
     areas = focus_areas or default_focus
 
     def default_goals_for_area(area: str) -> List[str]:
         return [
-            f"明确本周在「{area}」上的 1–2 个可量化目标",
-            f"上线至少 1 个与「{area}」相关的改动或实验",
+            f"Set 1–2 measurable goals for \"{area}\" this week",
+            f"Ship at least 1 change or experiment related to \"{area}\"",
         ]
 
     def default_tasks_for_area(area: str) -> List[str]:
         return [
-            f"梳理与「{area}」相关的现有触点/文案/配置",
-            f"设计并评审 1–2 个改动方案（轻量为先）",
-            f"在工具中配置并上线改动，记录观察指标与时间窗口",
+            f"Review current touchpoints/copy/config for \"{area}\"",
+            f"Design and review 1–2 changes (start small)",
+            f"Configure and launch in tooling; record metrics and observation window",
         ]
 
     plan: List[LifecycleWeek] = []
@@ -87,11 +87,11 @@ def plan_to_dict(plan: List[LifecycleWeek]) -> List[Dict[str, Any]]:
 def print_plan(plan: List[LifecycleWeek]) -> None:
     """Pretty-print the plan in a CLI-friendly format."""
     for item in plan:
-        print(f"第 {item.week} 周主题：{item.theme}")
-        print("  目标：")
+        print(f"Week {item.week} theme: {item.theme}")
+        print("  Goals:")
         for g in item.goals:
             print(f"    - {g}")
-        print("  关键任务：")
+        print("  Key tasks:")
         for t in item.tasks:
             print(f"    - {t}")
         print()
@@ -100,4 +100,3 @@ def print_plan(plan: List[LifecycleWeek]) -> None:
 if __name__ == "__main__":
     plan = generate_lifecycle_plan()
     print_plan(plan)
-

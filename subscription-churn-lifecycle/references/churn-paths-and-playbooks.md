@@ -1,51 +1,45 @@
-## 流失路径分类与运营 Playbook
+## Churn Reason Categories and Ops Playbooks
 
-本文件为 `subscription-churn-lifecycle` 技能在输出“流失路径诊断 + 防流失策略”时提供一个可复用的分类与结构。
+Use this when the skill outputs "churn-path diagnosis + churn-prevention strategy."
 
-### 一、常见流失原因类别
+### 1. Common churn reason categories
 
-可以将取消/不续费的原因大致分为：
+Group cancel/no-renew reasons roughly as:
 
-1. **产品适配问题**
-   - 口味/肤质/风格不合适
-   - 品牌/品类不够多样，审美疲劳
-   - 商品质量或体验不达预期
-2. **节奏与用量问题**
-   - 用不完/堆货
-   - 发货节奏和生活节奏不匹配
-3. **价格与价值感受问题**
-   - 感觉“太贵不值”
-   - 发生收入/支出压力变化
-4. **体验与服务问题**
-   - 客服/售后体验差
-   - 配送/物流/履约问题
-5. **生活阶段/环境变化**
-   - 搬家/换城市
-   - 家庭结构变化（搬家、生娃、分手/结婚等）
-6. **产品外因素**
-   - 忘记订阅存在
-   - 忘记怎么用/什么时候用
+1. **Product fit**
+   - Taste/skin/style doesn’t fit
+   - Not enough variety; boredom
+   - Quality or experience below expectation
+2. **Rhythm and volume**
+   - Can’t use it all / stockpile
+   - Ship rhythm doesn’t match life rhythm
+3. **Price and value**
+   - "Too expensive / not worth it"
+   - Income or spending changed
+4. **Experience and service**
+   - Bad CS or post-purchase support
+   - Delivery/fulfillment issues
+5. **Life stage / context**
+   - Move / new city
+   - Family change (new baby, breakup, etc.)
+6. **Outside product**
+   - Forgot they had a subscription
+   - Forgot how or when to use
 
-### 二、取消原因收集表单结构建议
+### 2. Cancel reason form (suggested structure)
 
-取消/关闭自动续费时的表单，建议包含：
+When they cancel or turn off auto-renew, the form can include:
 
-- 单选/多选的“主要原因”列表（按上述类别精简）
-- 可选的补充说明输入框
-- 基于选择自动展示的“替代选项”（如改周期/改档位/改组合）
+- Single/multi-select "main reason(s)" (short list from the categories above)
+- Optional free-text
+- Based on selection, show "alternative options" (e.g. change rhythm / plan / mix)
 
-### 三、按原因的运营 Playbook 示例骨架
+### 3. Playbook skeleton by reason
 
-对于每类原因，技能在输出时可以帮助用户设计：
+For each reason category, the skill can help design:
 
-- **防流失动作**：在产生取消意愿之前，如何提前介入。
-- **即时挽回动作**：用户点击“取消”时，可以提供哪些尊重又有诚意的选项。
-- **长期回流动作**：真取消后，未来在什么节点以什么理由触达。
+- **Pre-churn**: How to intervene before they decide to cancel.
+- **At cancel**: What respectful, concrete options to offer when they click "cancel."
+- **Post-churn**: When and how to reach out later for win-back.
 
-输出建议使用清单或表格形式，列出：
-
-- 原因类别
-- 推荐动作（防流失/即时挽回/回流）
-- 所需资源与复杂度
-- 对应的指标与观察周期
-
+Output as list or table: reason category, recommended actions (pre-churn / at cancel / win-back), resources and complexity, and metrics and observation window.

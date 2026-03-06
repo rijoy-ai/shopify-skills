@@ -1,29 +1,28 @@
-## 生命周期触点与消息策略参考
+## Lifecycle Touchpoints and Messaging Reference
 
-本文件为 `subscription-churn-lifecycle` 技能在输出“生命周期触点设计 + 内容与话术策略”时提供结构参考。
+Use this when the skill outputs "lifecycle touchpoint design" and "content and copy strategy."
 
-### 一、典型触点类型
+### 1. Typical touchpoint types
 
-- **交易触点**：下单确认、发货通知、签收提醒、账单预告、扣费成功/失败通知。
-- **体验触点**：欢迎与 Onboarding、使用教程、场景搭配建议、常见问题解答。
-- **价值重申触点**：使用统计/回顾、下期亮点预告、会员专属权益提醒。
-- **风险管理触点**：库存/堆货风险提示、用不完时的处理建议、暂停/改档位说明。
-- **挽回与回流触点**：取消确认后的“谢谢你曾经订阅”、时隔一段时间的专属回流福利等。
+- **Transaction**: Order confirm, ship notice, delivery reminder, billing preview, charge success/failure.
+- **Experience**: Welcome and onboarding, use tutorial, scenario/bundle ideas, FAQ.
+- **Value recap**: Usage recap, next-cycle preview, member-only benefits.
+- **Risk**: Stockpile/overload warning, "can’t use it all" tips, pause/change options.
+- **Win-back and return**: Post-cancel "thanks for having been a subscriber"; later, win-back offer.
 
-### 二、消息设计原则
+### 2. Messaging principles
 
-- 尽量围绕“帮助用户管理生活和订阅”，而不是单纯推销。
-- 优先提供 **信息与选项**，其次才是 **优惠与激励**。
-- 控制频次，避免在同一短时间窗口内多次打扰。
-- 在预扣费相关内容中，保持透明和尊重，避免“偷袭扣费”。
+- Focus on "help users manage their subscription and life," not only selling.
+- Lead with **information and options**, then **offers and incentives**.
+- Control frequency; avoid many touches in a short window.
+- For pre-charge content: transparent and respectful; no "surprise charge."
 
-### 三、内容骨架模板
+### 3. Content skeleton template
 
-在技能实际输出时，建议使用以下结构为每一个关键触点设计内容：
+For each important touchpoint, the skill can output:
 
-- 触点名称与触发时机
-- 核心目标（用户应该因此更清楚、更安心，还是更期待？）
-- 建议内容要点（可以列 3–5 条）
-- 示例文案骨架（1–3 句，自然语言即可）
-- 可选的动态插入信息（用户名、订阅档位、使用天数、历史偏好等）
-
+- Touchpoint name and trigger (vs subscribe/charge/delivery)
+- Core goal (user should feel clearer, calmer, or more eager?)
+- Content points (3–5 bullets)
+- Example copy skeleton (1–3 sentences, natural language)
+- Optional dynamic fields (name, plan, days since start, preference, etc.)

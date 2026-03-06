@@ -1,37 +1,36 @@
-## 订阅留存指标与实验设计参考
+## Subscription Retention Metrics and Experiment Reference
 
-本文件为 `subscription-churn-lifecycle` 技能在输出“指标体系与实验设计”时提供结构。
+Use this when the skill outputs "metrics and experiment design."
 
-### 一、核心订阅指标
+### 1. Core subscription metrics
 
-- 首月留存率（M1 Retention）
-- 第 2 / 第 3 个月留存率（M2/M3）
-- 平均订阅周期数（平均用户订阅了多少个计费周期）
-- 订阅生命周期 LTV/CLV
-- 取消率（按周期/人群/渠道细分）
-- 回流率（流失后再次订阅的比例）
+- First-month retention (M1)
+- Month-2 and month-3 retention (M2, M3)
+- Average number of billing cycles per subscriber
+- Subscription LTV/CLV
+- Cancel rate (by cycle/segment/channel)
+- Win-back rate (churned who subscribe again)
 
-### 二、过程指标
+### 2. Process metrics
 
-- Onboarding 内容打开/点击率
-- 首次使用/开箱完成率
-- 使用频次/使用天数
-- 账单预告打开/点击率
-- 取消原因表单填写率与分布
-- 挽回/回流活动响应率与转化率
+- Onboarding open/click rate
+- First use/unbox completion
+- Use frequency/days
+- Billing preview open/click
+- Cancel reason form completion and mix
+- Win-back/return campaign response and conversion
 
-### 三、轻量实验设计
+### 3. Lightweight experiment design
 
-建议多数实验保持：
+Keep experiments:
 
-- 一个清晰的主要成功指标
-- 14–60 天的观察窗口（覆盖至少 1–2 个计费周期）
-- 简单可控的变量（文案/时机/是否展示某个模块等）
+- One clear primary success metric
+- 14–60 day window (at least 1–2 billing cycles)
+- Simple levers (copy/timing/show or hide a block)
 
-可以围绕以下方向设计 A/B：
+Example A/B directions:
 
-- 不同 Onboarding 内容组合与节奏
-- 不同预扣费提醒文案/发送时间
-- 不同取消路径（是否展示替代选项）
-- 不同挽回激励（折扣 vs 体验包 vs 内容权益等）
-
+- Onboarding content mix and rhythm
+- Pre-charge reminder copy and send time
+- Cancel flow (show or hide alternatives)
+- Win-back incentive (discount vs trial vs content benefit)
