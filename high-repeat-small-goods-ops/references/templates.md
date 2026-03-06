@@ -1,155 +1,154 @@
-# 可复制模板（高复购小件店铺运营）
+# Reusable Templates (High-Repeat Small Goods Store Ops)
 
-使用方式：当用户要“方案/表格/排期/话术/复盘”，直接复制对应模板并填充；尽量给出可执行字段，不要留成空泛段落。
+Usage: When the user asks for "plan/table/schedule/copy/review," copy the right template and fill; use executable fields, not empty paragraphs.
 
 ---
 
-## 1) 周运营计划表（7 天排期）
+## 1) Weekly ops plan (7-day schedule)
 
-| 项目 | 周目标 | 目标值 | 当前值(如有) | 关键抓手 | 本周最重要的 3 个动作 |
+| Item | Weekly goal | Target | Current (if any) | Key lever | Top 3 actions this week |
 |---|---|---:|---:|---|---|
 | GMV |  |  |  |  |  |
-| 利润/毛利 |  |  |  |  |  |
-| 转化率 |  |  |  |  |  |
-| 客单价 |  |  |  |  |  |
-| 老客占比 |  |  |  |  |  |
-| 30天复购率 |  |  |  |  |  |
-| 评价率(含晒图/视频) |  |  |  |  |  |
-| 退款率 |  |  |  |  |  |
+| Profit / margin |  |  |  |  |  |
+| CVR |  |  |  |  |  |
+| AOV |  |  |  |  |  |
+| Repeat customer mix |  |  |  |  |  |
+| 30-day repeat rate |  |  |  |  |  |
+| Review rate (incl. UGC/photo/video) |  |  |  |  |  |
+| Return rate |  |  |  |  |  |
 
-**每日执行排期：**
+**Daily execution:**
 
-| Day | 货品动作 | 内容动作 | 活动/投放动作 | 私域/会员触达 | 评价&售后 | 关键监控指标 |
+| Day | Assortment | Content | Campaign/ads | Owned-channel touch | Reviews & post-purchase | Key metrics |
 |---|---|---|---|---|---|---|
-| 周一 |  |  |  |  |  |  |
-| 周二 |  |  |  |  |  |  |
-| 周三 |  |  |  |  |  |  |
-| 周四 |  |  |  |  |  |  |
-| 周五 |  |  |  |  |  |  |
-| 周六 |  |  |  |  |  |  |
-| 周日 |  |  |  |  |  |  |
+| Mon |  |  |  |  |  |  |
+| Tue |  |  |  |  |  |  |
+| Wed |  |  |  |  |  |  |
+| Thu |  |  |  |  |  |  |
+| Fri |  |  |  |  |  |  |
+| Sat |  |  |  |  |  |
+| Sun |  |  |  |  |  |
 
 ---
 
-## 2) 活动方案一页纸（适合大促/上新/清仓/会员日）
+## 2) One-page campaign brief (promo/new/clearance/member day)
 
-**活动名称**：
+**Campaign name**:
 
-**目标人群**：
-- 新客：
-- 老客：
+**Audience**:
+- New:
+- Repeat:
 
-**活动目标（可量化）**：
-- GMV/利润：
-- 转化率/客单价：
-- 老客占比/复购：
-- 评价率/退货率（控制线）：
+**Goals (measurable)**:
+- GMV / profit:
+- CVR / AOV:
+- Repeat share / repeat:
+- Review rate / return rate (guardrails):
 
-**主推货品（爆品/套装/赠品）**：
-- 爆品 SKU：
-- 套装 SKU：
-- 凑单品/加购品：
-- 赠品/门槛：
+**Hero (hero SKU / bundle / add-on / gift)**:
+- Hero SKU:
+- Bundle SKU:
+- Add-on / threshold:
+- Gift / threshold:
 
-**利益点设计（给用户的理由）**：
-- 价格/券：
-- 组合：
-- 会员专享：
-- 限时/限量机制（真实可控）：
+**Offer (reason to act)**:
+- Price / coupon:
+- Bundle:
+- Member-only:
+- Urgency / scarcity (real and controllable):
 
-**节奏（预热→爆发→返场）**：
-- 预热（D-3~D-1）：做什么、发什么、页面改什么
-- 爆发（D-day）：主会场/直播/投放/客服排班
-- 返场（D+1~D+3）：老客召回、评价追评、晒单激励
+**Rhythm (preheat → peak → wind-down)**:
+- Preheat (D-3~D-1): What to do, send, change on page
+- Peak (D-day): Main page / live / ads / CS shift
+- Wind-down (D+1~D+3): Repeat recall, review follow-up, UGC incentive
 
-**素材清单（必须可交付）**：
-- 主图/短视频脚本 x__：
-- 详情页模块（新增/替换）：
-- 直播话术/货盘/节奏（如有）：
-- 私域触达文案（发货后/签收后/召回）：
+**Asset list (deliverable)**:
+- Main image / short-video script x__:
+- Detail modules (new/replace):
+- Live copy / lineup / rhythm (if any):
+- Owned touch copy (post-ship / post-delivery / recall):
 
-**页面承接改动点**：
-- 主图卖点：
-- 详情页 3 秒价值：
-- FAQ（适配/色差/成分/材质/尺码）：
-- 评价引导与晒图示例：
+**Page changes**:
+- Main image benefit:
+- Detail 3-second value:
+- FAQ (fit/color/ingredients/material/size):
+- Review prompt & UGC examples:
 
-**客服SOP（活动期间）**：
-- 常见问题 Top10：
-- 催付话术：
-- 适配确认话术（如手机壳型号）：
-- 售后兜底与安抚：
+**CS SOP (during campaign)**:
+- Top 10 FAQs:
+- Payment nudge copy:
+- Fit confirmation (e.g. phone model):
+- After-sales fallback & reassurance:
 
-**风险与兜底**：
-- 库存/发货：
-- 投诉点（虚假宣传/规则不清）：
-- 薅羊毛规则：
+**Risks & fallbacks**:
+- Stock / shipping:
+- Complaint points (false claims / unclear rules):
+- Anti-abuse rules:
 
 ---
 
-## 3) 14 天复购节奏表（签收后触达）
+## 3) 14-day repeat rhythm (post-delivery touchpoints)
 
-适用：化妆品（补货/不同色号）、手机壳（换款/搭配/保护膜/配件）、小饰品（日常换搭）、日用快消（消耗补货）。
+Use for: Cosmetics (replenish/different shade), phone cases (new style/bundle/protector), small jewelry (daily mix), FMCG (replenish).
 
-| 天数(相对签收) | 目标 | 触达渠道 | 内容主题 | 具体文案要点 | 关联商品/套装 | 关键指标 |
+| Day (vs delivery) | Goal | Channel | Content theme | Copy points | Related product/bundle | Key metric |
 |---|---|---|---|---|---|---|
-| D0 | 降低退货&不满意 | IM/私域 | 使用提醒/开箱指引 | 1句话步骤 + 注意事项 | 教程相关 | 退款率、咨询率 |
-| D2 | 收集反馈&防差评 | IM | 满意度确认 | “是否适配/是否过敏/是否色差” | 换货/补发规则 | 差评率 |
-| D4 | 引导评价晒单 | IM/私域 | 晒单激励 | 门槛清晰：晒图/视频返__ | 赠品/积分 | 评价率、晒图率 |
-| D7 | 提供复购理由 | IM/私域 | 搭配/补货/新花色 | “同款不同色/场景搭配” | 组合包 | 复购点击率 |
-| D10 | 老客专享权益 | 私域 | 会员券/积分 | 仅老客可领，限时__小时 | 老客套装 | 领券率、核销率 |
-| D14 | 召回沉默 | 私域/短信(合规) | 流失召回 | “最后一次提醒 + 真诚理由” | 爆品/引流款 | 复购率、ROI |
+| D0 | Reduce return & dissatisfaction | IM/owned | Use reminder / unboxing | 1-line steps + notes | Tutorial | Return rate, inquiry rate |
+| D2 | Collect feedback & prevent negative reviews | IM | Satisfaction check | "Fit OK? Reaction? Color match?" | Exchange/reship rules | Negative review rate |
+| D4 | Drive review & UGC | IM/owned | UGC incentive | Clear rule: photo/video → __ reward | Gift/points | Review rate, UGC rate |
+| D7 | Give repeat reason | IM/owned | Bundle/replenish/new style | "Same in other color / scenario bundle" | Bundle | Repeat click rate |
+| D10 | Repeat-only benefit | Owned | Member coupon/points | Repeat-only, __ hours | Repeat bundle | Claim rate, redemption |
+| D14 | Win back silent | Owned/SMS (compliant) | Win-back | "Last reminder + genuine reason" | Hero/traffic driver | Repeat rate, ROI |
 
 ---
 
-## 4) 老客分层（简化 RFM）
+## 4) Repeat customer segments (simplified RFM)
 
-| 分层 | 判定规则（示例） | 运营目标 | 触达频率 | 常用内容 | 权益建议 |
+| Segment | Rule (example) | Ops goal | Touch frequency | Content | Benefit idea |
 |---|---|---|---|---|---|
-| 新客 | 首购≤14天 | 二单 | 2-4次/14天 | 教程+评价+二单理由 | 二单券/凑单 |
-| 活跃 | 近30天有购买 | 提升客单&频次 | 1-2次/周 | 上新/搭配/会员日 | 积分加速 |
-| 高价值 | 近90天≥3单 或 客单Top10% | 留存&推荐 | 1次/周 | 新品内测/专享 | 专属客服/礼 |
-| 沉默 | 30-90天未购 | 召回 | 1次/2周 | 对比利益点 | 阶梯券 |
-| 即将流失 | 90天未购 | 止损召回 | 1次/月 | 强理由/清仓 | 大额券（限品） |
+| New | First purchase ≤14d | Second order | 2–4x in 14d | Tutorial + review + second-order reason | Second-order coupon / add-on |
+| Active | Purchased in last 30d | Raise AOV & frequency | 1–2x/week | New arrivals / bundle / member day | Points boost |
+| High-value | ≥3 orders in 90d or top 10% AOV | Retain & refer | 1x/week | Early access / exclusive | Dedicated CS / gift |
+| Silent | No purchase 30–90d | Win back | 1x/2 weeks | Compare benefit | Tiered coupon |
+| At-risk | No purchase 90d | Save | 1x/month | Strong reason / clearance | Large coupon (product-limited) |
 
 ---
 
-## 5) 客服SOP（高复购小件通用）
+## 5) CS SOP (high-repeat small goods, general)
 
-**目标优先级**：不退货 > 不差评 > 转化 > 加购 > 评价 > 复购
+**Priority**: No return > No negative review > Convert > Add-to-cart > Review > Repeat
 
-### 5.1 下单前（转化）
-- **共情开场**：确认需求/场景（“你主要是想__，对吗？”）
-- **关键确认**：
-  - 手机壳：机型/版本/镜头开孔/是否带壳膜
-  - 化妆品：肤质/色号偏好/是否敏感
-- **证据型回答**：用“材质/成分/尺寸/适配清单/实拍图”回答，避免主观夸大
-- **催付**：限时优惠剩余__小时；库存提醒（可控）
+### 5.1 Pre-order (conversion)
+- **Empathy open**: Confirm need/scenario ("You mainly want __, right?")
+- **Key confirm**:
+  - Phone case: Model/version/lens cutout/case+film
+  - Cosmetics: Skin type/shade/sensitivity
+- **Evidence-based answers**: Use "material/ingredients/size/fit list/real photo," avoid hype
+- **Payment nudge**: Offer ends in __ hours; stock alert (if real)
 
-### 5.2 发货后（降低售后）
-- 包装/开箱注意事项
-- 使用/适配教程链接
-- 异常处理路径（破损/少件/不适配）
+### 5.2 Post-ship (reduce post-purchase issues)
+- Packaging / unboxing notes
+- Use / fit tutorial link
+- Exception path (damage/missing/wrong fit)
 
-### 5.3 评价引导（提升口碑）
-- D4 引导：给出“晒单示例”和“返利规则”（合规）
-- 差评预警：出现负面词（不适配/过敏/色差/掉色）立即跟进补救
+### 5.3 Review (reputation)
+- D4 nudge: "UGC example" and "reward rule" (compliant)
+- Bad-review alert: Negative words (fit/reaction/color/fade) → immediate save
 
-### 5.4 售后安抚（控退款&差评）
-- 先道歉再给选项：补发/换货/部分退款/退货
-- 给时限：__小时内处理完毕
-- 记录原因标签：用于下周复盘（适配、质量、物流、期望落差）
+### 5.4 Post-purchase support (control return & negative review)
+- Apologize then options: Reship/exchange/partial refund/return
+- Set timeline: Resolved within __ hours
+- Tag reason: For next week review (fit/quality/logistics/expectation gap)
 
 ---
 
-## 6) 本周复盘表（实验驱动）
+## 6) Weekly review table (experiment-driven)
 
-| 模块 | 本周做了什么 | 数据结果 | 结论（为什么） | 下周实验（改动点） | 预期 | 判定标准 | 止损线 |
+| Module | What we did this week | Data result | Conclusion (why) | Next week test (change) | Expectation | Success criteria | Stop-loss |
 |---|---|---|---|---|---|---|---|
-| 页面承接 |  |  |  |  |  |  |  |
-| 货品结构 |  |  |  |  |  |  |  |
-| 内容 |  |  |  |  |  |  |  |
-| 活动/投放 |  |  |  |  |  |  |  |
-| 复购触达 |  |  |  |  |  |  |  |
-| 客服/售后 |  |  |  |  |  |  |  |
-
+| Page conversion |  |  |  |  |  |  |  |
+| Assortment |  |  |  |  |  |  |  |
+| Content |  |  |  |  |  |  |  |
+| Campaign/ads |  |  |  |  |  |  |  |
+| Repeat touch |  |  |  |  |  |  |  |
+| CS/post-purchase |  |  |  |  |  |  |  |

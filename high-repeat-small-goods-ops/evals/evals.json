@@ -3,22 +3,21 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "我在抖音小店卖平价唇釉（客单 39-69），最近 7 天 GMV 8 万，转化率 1.6%，退款率 8%，老客占比不到 12%。我想把 30 天复购率从估计的 6% 拉到 10%，同时别把 ROI 做崩。请你给我一个“未来 14 天复购增长 + 本周排期 + 客服SOP关键话术 + 评价提升方案”的可执行方案，要求每一天要做什么、发什么、看什么指标。",
-      "expected_output": "输出包含：结论摘要、明确可量化目标与口径、14天复购节奏表（按天列出渠道/主题/文案要点/关联商品/指标）、本周每日排期表、客服SOP关键话术（下单前/发货后/评价/售后）、评价提升动作与风险兜底。",
+      "prompt": "I sell affordable lip gloss on Douyin (AOV 39–69). Last 7 days GMV 80k, CVR 1.6%, return rate 8%, repeat customer mix under 12%. I want to lift 30-day repeat rate from ~6% to 10% without killing ROI. Give me an executable plan for the next 14 days: repeat growth + weekly schedule + key CS copy + review improvement, with what to do/send/watch each day.",
+      "expected_output": "Output includes: summary, clear measurable goals and definitions, 14-day post-purchase cadence table (channel/theme/copy/product/metric by day), weekly daily schedule, CS SOP copy (pre-order/post-ship/review/post-purchase), review improvement actions and risk fallbacks.",
       "files": []
     },
     {
       "id": 2,
-      "prompt": "淘宝店卖手机壳（iPhone/小米/华为多机型），最近差评主要是“不适配/开孔不准/色差”。我准备做一个周末活动清库存，目标是订单数提升 30%、差评率不升。请输出一份“活动方案一页纸 + 页面承接改动清单 + 客服适配确认SOP + 售后兜底策略 + 复盘表模板”，要求直接可复制执行。",
-      "expected_output": "输出包含：活动方案一页纸（人群/目标/货品/利益点/节奏/素材/页面改动/客服/风险）、页面承接改动清单（主图/详情/FAQ/适配说明/色差说明）、客服适配确认话术与流程、售后兜底（补发/换货/部分退款规则与时限）、本周复盘表（含实验判定标准与止损线）。",
+      "prompt": "Taobao store sells phone cases (iPhone/Xiaomi/Huawei). Main negative reviews: wrong fit/wrong cutout/color difference. I’m running a weekend clearance. Goal: +30% orders, no rise in negative review rate. Output a one-page campaign brief + page change checklist + CS fit-confirmation SOP + post-purchase fallback + review table template, ready to copy and run.",
+      "expected_output": "Output includes: one-page campaign (audience/goals/assortment/offer/rhythm/assets/pages/CS/risks), page change checklist (hero image/PDP/FAQ/fit/color), CS fit-confirmation flow and copy, post-purchase fallback (reship/exchange/partial refund and timeline), weekly review table with test criteria and stop-loss.",
       "files": []
     },
     {
       "id": 3,
-      "prompt": "我卖的是小饰品（耳钉/项链，客单 29-99），内容主要在小红书种草引流到私域成交。最近上新频率不稳定、老客沉默，我想做一个“会员日”来提升复购和客单。请基于高复购小件的逻辑，给我：老客分层规则、会员权益设计（避免被薅羊毛）、内容选题清单（种草/转化/信任各 5 个）、以及一份周计划表（每天动作 + 指标）。",
-      "expected_output": "输出包含：简化RFM分层与运营目标、会员权益与反薅规则（门槛/限品/时效）、内容选题清单（分三类各≥5个并给到拍摄要点/转化钩子）、周运营计划表与每日执行排期，且明确关键监控指标与口径。",
+      "prompt": "I sell small jewelry (earrings/necklaces, AOV 29–99). Content is mainly Xiaohongshu driving to owned channel. New arrivals are inconsistent and repeat customers are going silent. I want a ‘member day’ to boost repeat and AOV. Based on high-repeat small goods logic, give me: segment rules, member benefits (anti-abuse), content topic list (awareness/conversion/trust, 5 each), and a weekly plan (daily actions + metrics).",
+      "expected_output": "Output includes: simplified RFM segments and ops goals, member benefits and anti-abuse rules (threshold/product/time), content topic list (≥5 per category with shoot/convert hooks), weekly ops plan and daily execution, with clear metrics and definitions.",
       "files": []
     }
   ]
 }
-
