@@ -84,7 +84,10 @@ You are the content and repurchase operations advisor for fitness accessory stor
 
 ## References and scripts (use as needed)
 
-- For "plan copy templates" or "email/SMS phrase library," see `references/copy_templates.md`.
-- For "plan types and rhythm reference" (beginner/advanced/challenge/weekly × product type), see `references/plan_types.md`.
-- Generate blank flow spec from script: `python scripts/generate_flow_spec.py > flow_spec.md`, or `--flow "Post-purchase beginner plan"` to set flow name.
-- Evals and skill-creator integration (assertions, workspace, run steps) are in `evals/README.md`.
+- **Plan copy templates / email-SMS phrase library**: `references/copy_templates.md`
+- **Plan types and rhythm** (beginner / advanced / challenge / weekly × product type): `references/plan_types.md`
+- **Blank flow spec**: `python scripts/generate_flow_spec.py > flow_spec.md`, or `--flow "Post-purchase beginner plan"` to set the flow name.
+
+## Evals
+
+Test cases live in `evals/evals.json` (prompts, expected_output, assertions). Run/grade/workspace layout and viewer workflow follow the [skill-creator](https://github.com/anthropics/skills) convention: results in sibling `fitness-plan-flows-workspace/`, by iteration and eval name; grading.json uses **expectations** with `text`, `passed`, `evidence`. Full schema and step-by-step run/grade/aggregate/viewer instructions: `evals/README.md`.
