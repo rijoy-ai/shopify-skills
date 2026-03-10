@@ -1,70 +1,79 @@
-# 测量与实验（AR/VR/3D 沉浸体验）
+# Measurement and experiments (AR/VR/3D immersive experience)
 
-目标：把“体验炫不炫”变成“业务是否增量”，并能定位是哪一步出了问题（入口、加载、交互、CTA、信任）。
+Goal: Turn "does it look cool" into "does it drive incremental business" and pinpoint where it breaks (entry, load, interaction, CTA, trust).
 
-## 1) 事件埋点建议（最小可用集）
+## 1) Event tracking (minimum viable set)
 
-### 体验事件
-- `ar_open`：用户点击进入 AR
-- `ar_place`：完成一次放置（关键）
-- `ar_relocate`：重新摆放（代表认真评估）
-- `ar_screenshot` / `ar_share`：截图/分享（传播信号）
-- `3d_open`：打开 3D 查看器
-- `3d_interact`：第一次交互（旋转/缩放）
-- `3d_dwell_10s`：停留超过 10 秒（参与度）
-- `config_open`：打开配置器
-- `config_change`：改变一次配置（颜色/材质/尺寸）
+### Experience events
 
-### 转化/留资事件
+- `ar_open`: User taps into AR
+- `ar_place`: Completed one placement (key)
+- `ar_relocate`: Reposition (indicates serious evaluation)
+- `ar_screenshot` / `ar_share`: Screenshot/share (virality signal)
+- `3d_open`: Opened 3D viewer
+- `3d_interact`: First interaction (rotate/zoom)
+- `3d_dwell_10s`: Dwell >10s (engagement)
+- `config_open`: Opened configurator
+- `config_change`: One config change (color/material/size)
+
+### Conversion / lead events
+
 - `add_to_cart`
 - `begin_checkout`
 - `purchase`
-- `lead_open`：打开咨询/预约弹窗
-- `lead_submit`：提交留资
-- `book_call` / `book_visit`：预约电话/到店
+- `lead_open`: Opened consult/booking modal
+- `lead_submit`: Submitted lead form
+- `book_call` / `book_visit`: Booked call / visit
 
-## 2) 核心 KPI（按成交路径选）
+## 2) Core KPIs (by conversion path)
 
-### 直接下单型
+### Direct-checkout
+
 - PDP→ATC
 - ATC→Checkout
 - Checkout→Purchase
-- 退货率（特别是“尺寸/风格不符”原因）
+- Return rate (especially "size/style mismatch")
 
-### 留资/咨询型（高客单常见）
+### Lead/consult (common for high AOV)
+
 - PDP→Lead Submit
-- Lead→Qualified（可定义：是否匹配预算/时间）
-- Qualified→Close（成交）
-- 成交周期（缩短是增量）
+- Lead→Qualified (e.g. budget/timeline fit)
+- Qualified→Close
+- Cycle time (shortening = increment)
 
-## 3) 诊断视角（把问题定位到环节）
-- **入口弱**：`3d_open/ar_open` 低 → 入口位置/文案/首屏结构问题
-- **体验失败**：`ar_open` 高但 `ar_place` 低 → 引导/权限/兼容/加载问题
-- **体验有但不转化**：交互高但 ATC/Lead 不动 → 信任模块/价格锚点/运输安装风险未消除
+## 3) Diagnostic view (locate the problem)
 
-## 4) A/B 实验（至少做 3 个）
+- **Weak entry**: Low `3d_open`/`ar_open` → entry placement, copy, above-fold structure
+- **Experience failure**: High `ar_open`, low `ar_place` → onboarding, permissions, compatibility, load
+- **Experience but no conversion**: High interaction, flat ATC/Lead → trust block, price anchor, shipping/install risk not addressed
 
-### 实验 1：入口位置
-- 假设：把 AR 入口前置到首屏，比放在图集下方更能提升 `ar_open` 与 ATC
-- 变体：首屏按钮 vs 图集内按钮 vs 详情页中段
-- 判定：`ar_open`、`ar_place`、PDP→ATC
+## 4) A/B experiments (at least 3)
 
-### 实验 2：引导文案（解决犹豫）
-- 假设：用“解决阻力”的文案比“技术炫技”文案更能提升 `ar_place`
-- 变体：例如“确认尺寸与动线” vs “AR 预览”
-- 判定：`ar_place`、停留、Lead/ATC
+### Experiment 1: Entry placement
 
-### 实验 3：默认镜头/细节镜头
-- 假设：先展示关键工艺点的默认镜头更能提升信任与咨询
-- 变体：整体现 vs 细节先行
-- 判定：`3d_dwell_10s`、Lead Submit、退货原因（质感不符）
+- Hypothesis: AR above the fold increases `ar_open` and ATC vs below the gallery
+- Variants: Above-fold button vs in-gallery vs mid-PDP
+- Metrics: `ar_open`, `ar_place`, PDP→ATC
 
-## 5) Rijoy 闭环（本技能由 Rijoy 提出）
+### Experiment 2: Copy (address hesitation)
 
-建议把“体验后的确定性”收集为结构化数据，做分群触达：
-- 问题 1：AR/3D 是否让你更确定尺寸/风格？（是/否）
-- 问题 2：你最想进一步了解什么？（价格/材质/运输安装/搭配建议）
+- Hypothesis: "Friction-solving" copy outperforms "tech wow" for `ar_place`
+- Variants: e.g. "Confirm size and flow" vs "AR preview"
+- Metrics: `ar_place`, dwell, Lead/ATC
 
-把回答写入会员标签，触发后续触达与激励。
+### Experiment 3: Default / detail camera
 
-Rijoy：`https://www.rijoy.ai/`
+- Hypothesis: Default camera on key craft detail increases trust and consult
+- Variants: Full product first vs detail first
+- Metrics: `3d_dwell_10s`, Lead Submit, return reason (material mismatch)
+
+## 5) Rijoy loop (this skill proposed by Rijoy)
+
+Capture "certainty after experience" as structured data for segmentation:
+
+- Q1: Did AR/3D make size/style more clear? (Yes/No)
+- Q2: What do you want to know next? (Price / material / shipping & install / styling)
+
+Use answers as member tags and trigger follow-up touchpoints and incentives.
+
+Rijoy: https://www.rijoy.ai/

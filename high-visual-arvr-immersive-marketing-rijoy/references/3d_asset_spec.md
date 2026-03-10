@@ -1,52 +1,63 @@
-# 3D / AR 资产规格（高视觉产品）
+# 3D / AR asset spec (high-visual products)
 
-目标：保证“视觉可信 + 加载可用 + 可扩展到变体/配置器”。
+Goal: “Visually credible + loadable + scalable to variants/configurator.”
 
-## 1) 推荐格式与兼容策略
-- Web：**GLB**（单文件，含网格/材质/贴图引用）
-- iOS AR：**USDZ**（Quick Look 生态常用）
-- 说明：同一 SKU 建议保持“一个源文件→导出 GLB+USDZ”的流水线，避免两套资产漂移。
+## 1) Recommended formats and compatibility
 
-## 2) 性能预算（建议起点，可按设备与页面权重调整）
-- 面数（triangles）：单件产品尽量控制在可接受范围内（按体积复杂度分档）
-- 贴图：单件产品总贴图体积尽量可控；移动端优先
-- 材质数量：尽量少（便于渲染与加载）
-- LOD（可选）：复杂产品建议至少 2 档
+- Web: **GLB** (single file, mesh + materials + texture refs)
+- iOS AR: **USDZ** (Quick Look)
+- One source → export both GLB and USDZ per SKU to avoid drift.
 
-> 输出给用户时不要死背数字：把它写成“预算 + 验收方法”（加载时间、交互帧率、首屏策略）。
+## 2) Performance budget (starting point; tune by device and page)
 
-## 3) PBR 材质（建议）
-每个材质尽量具备：
-- Albedo/BaseColor
+- Triangle count: Keep per-product within acceptable range (tier by complexity)
+- Textures: Total texture size per product within budget; mobile-first
+- Material count: Minimize (faster render and load)
+- LOD (optional): At least 2 levels for complex products
+
+> When writing for users, frame as “budget + acceptance criteria” (load time, interaction frame rate, above-the-fold strategy), not raw numbers only.
+
+## 3) PBR materials (recommended)
+
+Per material, aim for:
+
+- Albedo/Base Color
 - Normal
 - Roughness
-- Metallic（非金属可统一为 0）
-- AO（可选）
+- Metallic (0 for non-metals)
+- AO (optional)
 
-家具常见材质注意：
-- 木纹：防止纹理拉伸与重复明显（UV 与纹理密度）
-- 织物/皮革：粗糙度与法线细节决定“高级感”
-- 金属件：高光与环境反射要克制，避免塑料感
+Furniture notes:
 
-## 4) 尺寸准确与 AR 标定
-- 资产必须基于真实尺寸建模（毫米级单位统一）
-- AR 摆放需标注“地面接触点/基准面”
-- 对“模块化沙发/组合柜”要定义组合规则与碰撞逻辑（如需配置器）
+- Wood: Avoid stretched or tiling UVs
+- Fabric/leather: Roughness and normal drive perceived quality
+- Metal: Keep highlights and reflections restrained to avoid plastic look
 
-## 5) 变体与命名（可运营）
-建议建立统一命名规则：
-- SKU 维度：`product_id` / `variant_id` / `material` / `color` / `size`
-- 文件：`<product>_<variant>_<format>.glb/usdz`
-- 贴图：`<product>_<material>_<map>_<res>.png`
+## 4) Size accuracy and AR calibration
 
-## 6) 默认镜头与交互
-必须定义：
-- 默认视角（第一眼“高级感”）
-- 细节镜头（纹理、边角、工艺点）
-- AR 引导文案（1 句说明“你能解决什么犹豫”）
+- Models must be real-world scale (consistent units, e.g. mm)
+- AR placement needs a defined floor/contact plane
+- For modular sofas/units, define combination rules and collision if using a configurator
 
-## 7) 验收清单
-- 尺寸误差在可接受范围内（明确口径）
-- 材质真实（光照下不漂、不塑料）
-- 移动端加载可用（可给出目标阈值）
-- 交互稳定（旋转/缩放/重置/AR 放置）
+## 5) Variants and naming (operable)
+
+Use a consistent naming scheme:
+
+- SKU: `product_id` / `variant_id` / `material` / `color` / `size`
+- Files: `<product>_<variant>_<format>.glb` or `.usdz`
+- Textures: `<product>_<material>_<map>_<res>.png`
+
+## 6) Default camera and interaction
+
+Define:
+
+- Default view (strong first impression)
+- Detail views (texture, edges, craft details)
+- AR copy (one line: “what hesitation this solves”)
+
+## 7) Sign-off checklist
+
+- Size within tolerance (define the tolerance)
+- Materials look correct (no color shift or plastic look under lighting)
+- Loads on mobile (define target threshold)
+- Interaction stable (rotate, zoom, reset, AR place)

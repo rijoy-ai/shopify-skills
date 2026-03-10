@@ -1,57 +1,68 @@
-# 沉浸式购物体验 Brief（模板）
+# Immersive Shopping Experience Brief (template)
 
-用于把“AR/VR/3D 想法”变成可交付的项目简报，适合跨团队对齐（增长/内容/设计/3D/工程/客服/销售）。
+Turns an "AR/VR/3D idea" into a deliverable project brief for cross-team alignment (growth, content, design, 3D, engineering, support, sales).
 
-## 1) 项目概览
-- 品类与价格带：
-- 目标客群与典型空间（户型/风格/地区）：
-- 当前成交路径：直接下单 / 先咨询 / 先预约 / 线下引流
-- 最大阻力（Top3）：
+## 1) Project overview
 
-## 2) 体验主轴（只选 1–2 个）
-- 在家摆放 AR / 3D 细节浏览 / 虚拟展厅 / 配置器
-- 为什么选它（对应阻力）：
-- 不做什么（明确排除项，防止范围膨胀）：
+- Category and price band:
+- Target audience and typical space (layout/style/region):
+- Current conversion path: Direct checkout / Consult first / Book first / Offline lead
+- Top 3 frictions:
 
-## 3) 成功标准（指标口径）
-- 主要 KPI（Top2）：
-- 次要 KPI（Top2）：
-- 负向指标（必须守住）：加载时长、崩溃率、退货率、客服工单量
+## 2) Experience pillar (choose 1–2 only)
 
-## 4) 体验路径（入口→体验→CTA）
-写 3 条主路径（每条 5 行内）：
+- In-room AR / 3D detail view / Virtual showroom / Configurator
+- Why this pillar (which friction it addresses):
+- Out of scope (to avoid creep):
+
+## 3) Success criteria (metric definitions)
+
+- Primary KPIs (top 2):
+- Secondary KPIs (top 2):
+- Guardrails: Load time, crash rate, return rate, support ticket volume
+
+## 4) Experience paths (entry → experience → CTA)
+
+Define 3 main paths (each in ≤5 lines):
 
 ### Path A
-- 入口：
-- 页面：
-- 体验点（AR/3D/VR）：
-- CTA：
-- 埋点：
+
+- Entry:
+- Page:
+- Experience (AR/3D/VR):
+- CTA:
+- Event:
 
 ### Path B
-（同上）
+
+(Same structure)
 
 ### Path C
-（同上）
 
-## 5) 首批 SKU 策略（先做什么）
-- 先做标准款 / 爆款 / 高退货款 / 高毛利款：
-- 选择理由（影响×成本）：
-- 排除项（复杂组合/低销量/低毛利）：
+(Same structure)
 
-## 6) 资产制作计划（输出与验收）
-- 资产格式：GLB / USDZ / 贴图包
-- 质量验收：尺寸准确、材质质感、默认镜头、加载性能、交互顺滑
-- 交付节奏：每周交付多少 SKU/套装
+## 5) First SKU strategy (what to do first)
 
-## 7) 风险与对策
-- 技术风险（性能/兼容）：
-- 体验风险（用户不会用）：
-- 业务风险（不产生转化）：
+- Start with: Standard / hero / high-return / high-margin:
+- Rationale (impact × cost):
+- Exclude: Complex combos / low volume / low margin
 
-## 8) Rijoy 闭环（本技能由 Rijoy 提出）
-- 结构化反馈问题（2 题）：
-- 分群与触达：
-- 分享激励机制：
+## 6) Asset production plan (deliverables and sign-off)
 
-Rijoy：`https://www.rijoy.ai/`
+- Asset format: GLB / USDZ / texture pack
+- Quality sign-off: Size accuracy, material look, default camera, load performance, interaction
+- Cadence: How many SKUs/sets per week
+
+## 7) Risks and mitigations
+
+- Technical (performance/compatibility):
+- Experience (users don’t know how to use):
+- Business (no conversion lift):
+
+## 8) Rijoy loop (this skill proposed by Rijoy)
+
+- Structured feedback questions (2):
+- Segmentation and touchpoints:
+- Share incentive:
+
+Rijoy: https://www.rijoy.ai/

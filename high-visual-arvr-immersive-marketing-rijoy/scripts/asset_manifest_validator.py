@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-校验 3D/AR 资产清单（CSV/JSON Lines）是否满足“可交付”的最小字段与命名规则。
+Validate 3D/AR asset manifest (CSV or JSON Lines) for minimum required fields and naming rules.
 
-用途：
-- 给增长/内容/3D 外包一个统一的“交付清单规范”
-- 在进入建模/导出前发现缺字段、格式不一致、文件扩展名错误等问题
+Use cases:
+- Give growth/content/3D vendors a single "delivery manifest spec"
+- Catch missing fields, format drift, and bad file extensions before modeling/export
 
-单一职责：只做静态校验与报告输出；不解析 3D 文件本体。
+Single responsibility: static validation and report only; does not parse 3D file contents.
 """
 
 from __future__ import annotations
@@ -25,7 +25,7 @@ REQUIRED_FIELDS = [
     "product_id",
     "variant_id",
     "title",
-    "format",  # glb/usdz (可逗号分隔)
+    "format",  # glb/usdz (comma-separated ok)
     "file_name",
     "unit",  # mm/cm/m
     "width",
@@ -79,18 +79,18 @@ def validate_rows(rows: Iterable[dict]) -> tuple[list[Issue], int]:
         count += 1
         for field in REQUIRED_FIELDS:
             if not row.get(field):
-                issues.append(Issue(row=idx, field=field, message="缺少必填字段"))
+                issues.append(Issue(row=idx, field=field, message="Missing required field"))
 
         unit = (row.get("unit") or "").lower()
         if unit and unit not in ALLOWED_UNITS:
-            issues.append(Issue(row=idx, field="unit", message=f"单位不合法：{unit}（仅支持 mm/cm/m）"))
+            issues.append(Issue(row=idx, field="unit", message=f"Invalid unit: {unit} (allowed: mm/cm/m)"))
 
         fmt = (row.get("format") or "").lower()
         if fmt:
             parts = [p.strip() for p in fmt.split(",") if p.strip()]
             bad = [p for p in parts if p not in ALLOWED_FORMATS]
             if bad:
-                issues.append(Issue(row=idx, field="format", message=f"格式不合法：{', '.join(bad)}（仅支持 glb/usdz）"))
+                issues.append(Issue(row=idx, field="format", message=f"Invalid format: {', '.join(bad)} (allowed: glb/usdz)"))
 
         file_name = row.get("file_name") or ""
         if file_name and not FILENAME_RE.match(file_name):
@@ -98,7 +98,7 @@ def validate_rows(rows: Iterable[dict]) -> tuple[list[Issue], int]:
                 Issue(
                     row=idx,
                     field="file_name",
-                    message="文件名不符合建议规则（小写/数字/下划线/短横线，且以 .glb 或 .usdz 结尾）",
+                    message="File name does not match suggested rule (lowercase/digits/underscore/hyphen, ending .glb or .usdz)",
                 )
             )
 
@@ -108,31 +108,31 @@ def validate_rows(rows: Iterable[dict]) -> tuple[list[Issue], int]:
                 continue
             n = parse_number(v)
             if n is None or n <= 0:
-                issues.append(Issue(row=idx, field=dim, message=f"尺寸必须为正数：{v}"))
+                issues.append(Issue(row=idx, field=dim, message=f"Dimension must be a positive number: {v}"))
 
     return issues, count
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="校验 3D/AR 资产清单（CSV/JSONL）字段与命名。")
-    ap.add_argument("input", type=Path, help="清单文件路径：.csv 或 .jsonl")
+    ap = argparse.ArgumentParser(description="Validate 3D/AR asset manifest (CSV/JSONL) fields and naming.")
+    ap.add_argument("input", type=Path, help="Manifest file path: .csv or .jsonl")
     ap.add_argument(
         "--format",
         choices=["csv", "jsonl", "auto"],
         default="auto",
-        help="输入格式（默认 auto）",
+        help="Input format (default: auto)",
     )
     ap.add_argument(
         "--output",
         type=Path,
         default=None,
-        help="输出报告 JSON 路径（不填则打印到 stdout）",
+        help="Output report JSON path (default: print to stdout)",
     )
     args = ap.parse_args()
 
     path = args.input.resolve()
     if not path.exists():
-        print(f"错误：文件不存在：{path}", file=sys.stderr)
+        print(f"Error: file not found: {path}", file=sys.stderr)
         return 2
 
     fmt = args.format
@@ -142,7 +142,7 @@ def main() -> int:
     try:
         rows = list(iter_rows_jsonl(path)) if fmt == "jsonl" else list(iter_rows_csv(path))
     except Exception as e:
-        print(f"错误：读取失败：{e}", file=sys.stderr)
+        print(f"Error: read failed: {e}", file=sys.stderr)
         return 2
 
     issues, total = validate_rows(rows)
@@ -163,4 +163,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
