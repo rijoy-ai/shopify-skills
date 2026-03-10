@@ -3,85 +3,85 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "我卖阻力带和弹力带，客单价 80～200，主要在独立站 + Shopify，用 Klaviyo。想用「训练计划」做购后和复购：买完送入门计划，过几周再推进阶计划促复购。给我一套可落地的流设计，包括触发、时间线、每条流里计划叫啥、邮件结构，以及和 Klaviyo 的对应关系。",
+      "prompt": "I sell resistance bands and elastic bands, AOV $80–200, mainly on standalone site + Shopify, using Klaviyo. I want to use 'training plans' for post-purchase and repurchase: send a beginner plan after purchase, then push an advanced plan a few weeks later to drive repurchase. Give me a set of actionable flow designs including triggers, timelines, plan names per flow, email structure, and how they map to Klaviyo.",
       "expected_output": "Output includes: flow map listing all flows (post-purchase plan delivery, advancement plan for repurchase), per-flow specs with trigger, exit rules, timeline (T+), plan type and name, message subject/body structure/CTA, KPIs, and Klaviyo implementation mapping. Plan content list tying plans to products.",
       "files": [],
       "assertions": [
         {
           "name": "has_flow_map",
-          "description": "输出包含「训练计划配套流总览」或 Flow map 小节，列出流名称与目标"
+          "description": "Output contains a 'Training plan flow overview' or Flow map section listing flow names and goals"
         },
         {
           "name": "has_post_purchase_and_repurchase_flows",
-          "description": "至少包含购后入门计划交付流与进阶/复购流两条流规格"
+          "description": "At least includes post-purchase beginner plan delivery flow and advanced/repurchase flow specs"
         },
         {
           "name": "each_flow_has_required_fields",
-          "description": "每条流规格包含 Goal、Trigger、Exit rules、Timeline、计划类型、Messages 结构、KPIs"
+          "description": "Each flow spec includes Goal, Trigger, Exit rules, Timeline, plan type, Messages structure, KPIs"
         },
         {
           "name": "has_plan_content_list",
-          "description": "输出包含「计划内容清单」且至少列出 1 个计划及其适用产品/时长"
+          "description": "Output contains a 'Plan content list' with at least one plan and its applicable products/duration"
         },
         {
           "name": "has_klaviyo_mapping",
-          "description": "实现映射中明确提到 Klaviyo 或对应 Klaviyo 的搭建方式"
+          "description": "Implementation mapping explicitly mentions Klaviyo or how to build in Klaviyo"
         }
       ]
     },
     {
       "id": 2,
-      "prompt": "我们做瑜伽环和泡沫轴，复购率不高，想用「21 天挑战」拉新 + 首单后送 7 天入门计划提升留存。需要：拉新用的挑战流（留资或首单解锁）、购后 7 天计划交付流、以及简单分层（新客/已购未复购）。邮件为主，短信只用在关键节点。",
-      "expected_output": "Output includes: flow map with challenge (acquisition) flow and post-purchase 7-day plan delivery flow; segment logic (new vs post-first-purchase); trigger/exit/timeline/message structure for each; note on SMS only for key moments; plan content list (21-day challenge, 7-day beginner) and product fit.",
+      "prompt": "We sell yoga rings and foam rollers; repurchase rate is low. We want to use a '21-day challenge' for acquisition and send a 7-day beginner plan after first purchase to improve retention. Need: challenge flow for acquisition (unlock on lead capture or first order), post-purchase 7-day plan delivery flow, and simple segmentation (new vs post-first-purchase). Email primary; SMS only for key moments.",
+      "expected_output": "Output includes: flow map with challenge (acquisition) flow and post-purchase 7-day plan delivery flow; segment logic (new vs post-first-purchase); trigger/exit/timeline/message structure per flow; note that SMS is only for key moments; plan content list (21-day challenge, 7-day beginner) and product fit.",
       "files": [],
       "assertions": [
         {
           "name": "has_challenge_flow",
-          "description": "包含以 21 天挑战/留资或首单解锁为目标的拉新流规格"
+          "description": "Includes acquisition flow spec with 21-day challenge / unlock on lead capture or first order"
         },
         {
           "name": "has_7day_post_purchase_flow",
-          "description": "包含购后 7 天入门计划交付流，且计划类型为 7 天/入门"
+          "description": "Includes post-purchase 7-day beginner plan delivery flow with 7-day/beginner plan type"
         },
         {
           "name": "has_segment_logic",
-          "description": "明确分群逻辑：新客与已购未复购（或类似表述）"
+          "description": "Segment logic is clear: new vs post-first-purchase (or equivalent)"
         },
         {
           "name": "sms_only_key_moments",
-          "description": "对短信使用有限制说明（仅关键节点等）"
+          "description": "SMS usage is limited (e.g. key moments only)"
         },
         {
           "name": "plan_list_fits_products",
-          "description": "计划内容清单中至少包含 21 天挑战与 7 天入门计划，并对应瑜伽环/泡沫轴"
+          "description": "Plan content list includes at least 21-day challenge and 7-day beginner, tied to yoga ring/foam roller"
         }
       ]
     },
     {
       "id": 3,
-      "prompt": "健身配件店，有阻力带套装和单条卖。想对 60 天没买的人用「新计划」唤醒，不要一上来就大促。给一条沉默唤醒流：触发条件、时间线、邮件主题和正文框架、计划类型建议，以及 exit 规则。",
+      "prompt": "Fitness accessory store with resistance band sets and single bands. We want to win back people who haven’t bought in 60 days using a 'new plan,' not heavy promotion upfront. Give one win-back flow: trigger, timeline, email subject and body framework, suggested plan type, and exit rules.",
       "expected_output": "Output includes: one flow spec for win-back (60-day no purchase); trigger and exit rules; timeline (e.g. T+0 email with new plan); subject/hook and body structure emphasizing 'new plan' not heavy discount; suggested plan type (e.g. new weekly plan or short challenge); KPI and implementation note.",
       "files": [],
       "assertions": [
         {
           "name": "win_back_trigger",
-          "description": "流规格的 Trigger 为 60 天未购或类似沉默定义"
+          "description": "Flow spec Trigger is 60-day no purchase or similar win-back definition"
         },
         {
           "name": "has_exit_rules",
-          "description": "明确写出 Exit rules"
+          "description": "Exit rules are explicitly stated"
         },
         {
           "name": "message_emphasizes_plan_not_discount",
-          "description": "邮件主题或正文框架以「新计划」为主、非强打折"
+          "description": "Email subject or body framework focuses on 'new plan,' not heavy discount"
         },
         {
           "name": "has_plan_type_suggestion",
-          "description": "给出计划类型建议（如周计划、短挑战等）"
+          "description": "Includes plan type suggestion (e.g. weekly plan, short challenge)"
         },
         {
           "name": "has_timeline_and_kpi",
-          "description": "包含时间线（如 T+0）与 KPI 或实现说明"
+          "description": "Includes timeline (e.g. T+0) and KPI or implementation note"
         }
       ]
     }

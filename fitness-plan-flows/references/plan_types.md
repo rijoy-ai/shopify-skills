@@ -1,17 +1,17 @@
-# 训练计划类型与节奏对照
+# Training Plan Types and Rhythm Reference
 
-| 计划类型   | 时长/节奏   | 典型适用产品       | 主要用途         |
-|------------|-------------|--------------------|------------------|
-| 入门计划   | 5～7 天     | 单条阻力带、瑜伽环 | 购后即用、降闲置 |
-| 快速上手   | 1～3 天     | 泡沫轴、按摩球     | 开箱当天可练     |
-| 周计划     | 7 天可循环  | 多档阻力带、套装   | 复购窗口触达     |
-| 进阶计划   | 2～4 周     | 套装、多配件组合   | 促升级/加购      |
-| 21 天挑战  | 21 天       | 全系列             | 拉新、留资、唤醒 |
-| 会员专属   | 周/月更新   | 限定款/高毛利组合  | 忠诚与复购       |
+| Plan type   | Duration / rhythm | Typical products        | Main use              |
+|-------------|-------------------|-------------------------|------------------------|
+| Beginner    | 5–7 days          | Single band, yoga ring  | Post-purchase, reduce unused |
+| Quick start | 1–3 days          | Foam roller, massage ball | Use same day out of box   |
+| Weekly plan | 7 days, repeatable | Multi-level bands, sets | Repurchase-window touchpoint |
+| Advanced    | 2–4 weeks         | Sets, multi-accessory   | Upsell / add-on          |
+| 21-day challenge | 21 days       | Full range              | Acquisition, lead capture, win-back |
+| Member exclusive | Weekly/monthly update | Limited / high-margin combos | Loyalty and repurchase |
 
-## 与产品的强绑定示例
+## Strong product-binding examples
 
-- **仅买一条阻力带** → 入门 7 天计划（同一根带子完成）
-- **买多档位套装** → 4 周进阶计划（每周换档位）
-- **阻力带 + 瑜伽环** → 周计划（下肢/上肢/核心轮换）
-- **泡沫轴/按摩球** → 5 分钟日计划（放松/激活）
+- **Single resistance band only** → 7-day beginner plan (same band for all)
+- **Multi-level set** → 4-week advanced plan (change level each week)
+- **Band + yoga ring** → Weekly plan (lower/upper/core rotation)
+- **Foam roller / massage ball** → 5-minute daily plan (release/activation)

@@ -1,27 +1,27 @@
-# Evals 说明（skill-creator 规范）
+# Evals (skill-creator convention)
 
-本 skill 的测试用例与断言按 [skill-creator](https://github.com/anthropics/skills) 规范维护，便于跑「带 skill / 不带 skill」对比与定量断言打分。
+This skill’s test cases and assertions follow the [skill-creator](https://github.com/anthropics/skills) convention for "with skill / without skill" comparison and quantitative assertion scoring.
 
-## evals.json 结构
+## evals.json structure
 
-- **skill_name**：`fitness-plan-flows`
-- **evals**：数组，每项包含
-  - **id**：序号（1-based）
-  - **prompt**：用户任务描述（真实场景）
-  - **expected_output**：期望产出摘要
-  - **files**：输入文件列表（通常为空）
-  - **assertions**：可客观验证的断言数组，每项含 `name`、`description`，供 grader 判断通过与否并填写 `evidence`
+- **skill_name**: `fitness-plan-flows`
+- **evals**: Array; each item includes
+  - **id**: Sequence number (1-based)
+  - **prompt**: User task description (real scenario)
+  - **expected_output**: Summary of expected output
+  - **files**: List of input files (usually empty)
+  - **assertions**: Array of objectively verifiable assertions; each has `name`, `description` for grader to pass/fail and fill `evidence`
 
-## 断言设计原则
+## Assertion design
 
-- 每条 assertion 可独立判断：输出中是否包含某结构/字段/表述。
-- 与 SKILL 规定的输出格式一致：Flow map、流规格（Goal/Trigger/Exit/Timeline/计划类型/Messages/KPIs）、计划内容清单、实现映射等。
-- grading 时使用字段 `text`（对应 description）、`passed`（true/false）、`evidence`（引用输出原文）。
+- Each assertion can be judged independently: whether the output contains a given structure/field/wording.
+- Align with SKILL output format: Flow map, flow specs (Goal/Trigger/Exit/Timeline/plan type/Messages/KPIs), plan content list, implementation mapping.
+- Grading uses `text` (for description), `passed` (true/false), `evidence` (quote from output).
 
-## Workspace 与迭代
+## Workspace and iterations
 
-评测结果放在**与 skill 同级**的 `fitness-plan-flows-workspace/` 下，按迭代组织：
+Eval results live in **sibling to the skill**: `fitness-plan-flows-workspace/`, organized by iteration:
 
-- `iteration-1/<eval_name>/`：首次运行，`eval_name` 与每条 eval 的描述性名称一致（见 workspace 内 `eval_metadata.json`）。
-- 每次运行后在该目录下生成 `with_skill/outputs/`、`without_skill/outputs/`，以及可选的 `grading.json`、`timing.json`。
-- 汇总与查看器生成见 workspace 内 `README.md`。
+- `iteration-1/<eval_name>/`: First run; `eval_name` matches the descriptive name for each eval (see `eval_metadata.json` in workspace).
+- After each run, that directory gets `with_skill/outputs/`, `without_skill/outputs/`, and optionally `grading.json`, `timing.json`.
+- Aggregation and viewer generation are described in the workspace `README.md`.

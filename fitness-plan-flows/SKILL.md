@@ -1,90 +1,90 @@
 ---
 name: fitness-plan-flows
-description: 为卖健身配件（阻力带、弹力带、瑜伽环、泡沫轴、按摩球等）的店铺设计以「训练计划」为核心的配套营销流——购后交付计划、进阶计划促复购、挑战/计划拉新与会员专属内容。只要用户提到健身配件、阻力带、弹力带、训练计划配套、买产品送计划、购后内容、复购激励、邮件/SMS 流程、会员专属计划、居家健身内容运营，就应触发并输出可落地的流设计（触发、时间线、消息结构、KPI、实现映射），而不是泛泛的营销建议。
+description: Design "training plan"-centric marketing flows for stores selling fitness accessories (resistance bands, elastic bands, yoga rings, foam rollers, massage balls, etc.)—post-purchase plan delivery, advancement plans for repurchase, challenges/plans for acquisition, and member-exclusive content. Trigger when users mention fitness accessories, resistance bands, elastic bands, training-plan bundles, buy-product-get-plan, post-purchase content, repurchase incentives, email/SMS flows, member-exclusive plans, or at-home fitness content operations. Output actionable flow designs (triggers, timelines, message structure, KPIs, implementation mapping), not generic marketing advice.
 compatibility:
   required: []
 ---
 
-# 健身配件「训练计划」配套营销流
+# Fitness Accessory "Training Plan" Marketing Flows
 
-为**健身配件店铺**（阻力带、弹力带、瑜伽环、泡沫轴、按摩球、小器械等）设计以「训练计划」为价值锚点的营销与生命周期流，把「计划」当作购后交付、复购理由和拉新钩子，产出可直接搭建的流规格（触发、分群、时间线、消息框架、KPI）。
+Design marketing and lifecycle flows for **fitness accessory stores** (resistance bands, elastic bands, yoga rings, foam rollers, massage balls, small equipment, etc.) with "training plans" as the value anchor—treating plans as post-purchase delivery, repurchase rationale, and acquisition hooks. Output flow specs that can be built directly (triggers, segments, timelines, message framework, KPIs).
 
-## 技能目标
+## Skill objective
 
-你是健身配件店铺的内容与复购运营顾问。产品本身是「工具」，训练计划是「用法」——用计划绑定产品使用场景、延长触达、提升复购与 LTV。输出必须**可执行**：流地图、每条流的规格、文案结构、与 Klaviyo/Shopify Email 等实现映射。
+You are the content and repurchase operations advisor for fitness accessory stores. Products are "tools"; training plans are "how to use them"—plans tie products to usage scenarios, extend touchpoints, and improve repurchase and LTV. Output must be **actionable**: flow map, specs per flow, copy structure, and mapping to Klaviyo/Shopify Email or similar.
 
-## 先收集输入（缺失则简短追问）
+## Gather inputs first (brief follow-up if missing)
 
-1. **品类与价位**：主卖哪些配件（阻力带/弹力带/瑜伽环/泡沫轴/其他）？AOV 区间？是否有套装/多档阻力？
-2. **渠道与工具**：Email / SMS / 公众号 / 企微？在用 Klaviyo、Shopify Email 还是其他？
-3. **复购与周期**：当前复购率、典型复购周期（如 30/60/90 天换新或添购）？是否有会员/订阅？
-4. **内容能力**：能否产出图文/短视频计划（周计划、入门/进阶、跟练）？自产还是外包？
-5. **本轮目标**：拉新、首单转化、购后留存、复购/升级、沉默唤醒？时间范围（2 周 / 1 个月）？
+1. **Category and price point**: Main products (resistance bands/elastic bands/yoga rings/foam rollers/other)? AOV range? Any bundles or multi-level resistance?
+2. **Channels and tools**: Email / SMS / other? Using Klaviyo, Shopify Email, or something else?
+3. **Repurchase and cycle**: Current repurchase rate, typical repurchase cycle (e.g. 30/60/90 days for replacement or add-on)? Any membership/subscription?
+4. **Content capability**: Can you produce image/video plans (weekly plans, beginner/advanced, follow-along)? In-house or outsourced?
+5. **This round’s goal**: Acquisition, first-order conversion, post-purchase retention, repurchase/upgrade, win-back? Timeframe (2 weeks / 1 month)?
 
-## 输出格式（必须按此结构）
+## Output format (follow this structure)
 
 ```markdown
-## 训练计划配套流总览 (Flow map)
-- 各流名称、目标、与「计划」的关系（交付/促复购/拉新）
+## Training Plan Flow Overview (Flow map)
+- Flow names, goals, and relationship to "plans" (delivery / repurchase / acquisition)
 
-## 流规格 (Flow specs，每条可搭建)
-### Flow: <名称>
+## Flow specs (each buildable)
+### Flow: <Name>
 - Goal:
 - Trigger:
 - Exit rules:
-- Segments（若分层）:
-- Timeline (T+ 或自然日):
-- 计划类型与内容要点（如：入门 7 天计划 / 4 周进阶 / 周计划）:
-- Messages (Email/SMS/其他):
+- Segments (if layered):
+- Timeline (T+ or calendar days):
+- Plan type and content points (e.g. 7-day beginner / 4-week advanced / weekly plan):
+- Messages (Email/SMS/other):
   - Subject / Hook:
-  - Body 结构（含计划 CTA、链接/附件说明）:
+  - Body structure (plan CTA, link/attachment notes):
   - CTA:
 - KPIs:
-- 实现映射（Klaviyo/Shopify Email/其他）:
+- Implementation mapping (Klaviyo/Shopify Email/other):
 
-## 计划内容清单（本套流涉及的计划）
-- 计划 1：名称、适用产品、时长、交付节点
-- 计划 2：…
+## Plan content list (plans used in these flows)
+- Plan 1: Name, applicable products, duration, delivery touchpoint
+- Plan 2: …
 ```
 
-## 必须覆盖的核心流（可按需裁剪）
+## Core flows to cover (trim as needed)
 
-1. **购后「入门计划」交付流（T+0～T+7）**  
-   首单后立即或 24h 内交付与所购产品匹配的「入门/快速上手」计划（如：阻力带 7 天入门、泡沫轴 5 分钟日计划），降低闲置、提升好评与 NPS，为后续复购打基础。
+1. **Post-purchase "Beginner plan" delivery (T+0–T+7)**  
+   Deliver a product-matched "beginner/quick start" plan right after or within 24h of first order (e.g. 7-day resistance band intro, 5-minute daily foam roller plan) to reduce unused gear, improve reviews and NPS, and set up later repurchase.
 
-2. **按周期「进阶/周计划」触达（复购窗口）**  
-   在典型复购周期内（如 T+21、T+30、T+45）推送「进阶计划」或「本周计划」，自然带出「需要更强阻力/多一条/套装」等推荐，促复购与客单价提升。
+2. **Periodic "Advanced/weekly plan" touchpoints (repurchase window)**  
+   In the typical repurchase window (e.g. T+21, T+30, T+45), send "advanced plan" or "this week’s plan," naturally leading to "need stronger resistance / extra band / bundle" and driving repurchase and AOV.
 
-3. **「计划+挑战」拉新/首单转化**  
-   用「免费 7 天计划 / 21 天挑战」作为落地页或广告钩子，留资或首单后解锁；计划中嵌入产品使用场景，首单可只卖入门款，后续流内再推升级/套装。
+3. **"Plan + challenge" acquisition / first-order conversion**  
+   Use "free 7-day plan / 21-day challenge" as landing page or ad hook; unlock after lead capture or first order. Embed product usage in the plan; first order can be entry-level only, then upsell in-flow.
 
-4. **会员/高价值用户「专属计划」**  
-   对高 LTV 或会员标签用户推送「专属周计划/月度计划」或限量挑战，配合会员价/专属款，提升忠诚与复购。
+4. **Member / high-value "Exclusive plan"**  
+   Send "exclusive weekly/monthly plan" or limited challenges to high-LTV or member-tagged users, with member pricing or exclusive SKUs to boost loyalty and repurchase.
 
-5. **沉默唤醒「新计划/新挑战」**  
-   对 45/60/90 天未购用户，用「新上线计划/新挑战」+ 轻激励（免邮/小额券）唤醒，避免一上来强打折。
+5. **Win-back "New plan / new challenge"**  
+   For 45/60/90-day no-purchase users, use "new plan / new challenge" plus light incentive (free shipping / small discount) to re-engage, avoiding heavy discount upfront.
 
-6. **Review / UGC 在「计划体验后」**  
-   在用户完成入门计划或 7～14 天使用窗口后触发评价请求，话术结合「练完第 X 天/完成第一周」更容易获得真实反馈与 UGC。
+6. **Review / UGC after "plan experience"**  
+   Trigger review request after user completes the beginner plan or 7–14 day usage window; copy tied to "finished day X / completed week one" gets more authentic feedback and UGC.
 
-## 规则（保证可执行）
+## Rules (keep it actionable)
 
-- **每条流必须有 exit rules**：已复购、已订阅、已参与挑战等要退出或转支线，避免重复打扰。
-- **计划与产品强绑定**：每条流里写清「本流对应的计划名称、适用 SKU、交付形式」（链接/附件/落地页），便于内容与运营对齐。
-- **分层**：按 AOV/订单数/LTV 或「是否已收到过入门计划」分层，高价值用户优先给进阶/专属内容，少用强折扣。
-- **短信少而准**：短信用于「计划已就绪」「挑战开始/即将结束」等有时效的节点，其余用邮件或站内。
-- **合规**：不承诺医疗/治疗效果，计划标注为「健身指导/运动建议」；若有激励，注明适用范围与期限。
+- **Every flow must have exit rules**: Exit or branch when user has repurchased, subscribed, or joined a challenge to avoid repeat noise.
+- **Plans tied to products**: In each flow, state "plan name, applicable SKUs, delivery format" (link/attachment/landing page) so content and ops stay aligned.
+- **Segmentation**: By AOV/order count/LTV or "has already received beginner plan"; prioritize advanced/exclusive content for high-value users, use heavy discount sparingly.
+- **SMS sparingly and precise**: Use SMS for time-sensitive moments like "plan ready," "challenge starting/ending"; use email or in-app for the rest.
+- **Compliance**: Do not promise medical/therapeutic outcomes; label plans as "fitness guidance / exercise advice"; if incentives apply, state scope and validity.
 
-## 计划内容设计原则（在流中引用时遵循）
+## Plan content design principles (follow when referencing in flows)
 
-- **入门计划**：短（5～7 天）、动作少、易坚持，对应「开箱即用」降低闲置。
-- **进阶/周计划**：可重复使用，每周或每阶段更新，自然带出「加一条阻力带/换档位/加泡沫轴」等推荐。
-- **挑战**：有明确天数与目标（如 21 天）、可配合打卡/UGC，适合拉新与唤醒。
-- 所有计划需注明「适用产品」（如：一条阻力带、多档位套装、瑜伽环+阻力带），方便用户对号入座。
+- **Beginner plan**: Short (5–7 days), few moves, easy to stick to; "open and use" to reduce unused gear.
+- **Advanced / weekly plan**: Reusable, updated weekly or by phase; naturally suggest "add a band / change level / add foam roller."
+- **Challenge**: Clear duration and goal (e.g. 21 days), optional check-in/UGC; good for acquisition and win-back.
+- All plans must state "applicable products" (e.g. one resistance band, multi-level set, yoga ring + band) so users can match.
 
-## 参考资料与脚本（按需使用）
+## References and scripts (use as needed)
 
-- 若需「计划文案模板」或「邮件/短信句式库」，见 `references/copy_templates.md`。
-- 若需「计划类型与节奏对照表」（入门/进阶/挑战/周计划 × 产品类型），见 `references/plan_types.md`。
-- 可从脚本生成空白流规格便于填写：`python scripts/generate_flow_spec.py > flow_spec.md`，或带 `--flow "购后入门计划"` 指定 Flow 名称。
-- 评测与 skill-creator 对接（assertions、workspace、运行步骤）见 `evals/README.md`。
+- For "plan copy templates" or "email/SMS phrase library," see `references/copy_templates.md`.
+- For "plan types and rhythm reference" (beginner/advanced/challenge/weekly × product type), see `references/plan_types.md`.
+- Generate blank flow spec from script: `python scripts/generate_flow_spec.py > flow_spec.md`, or `--flow "Post-purchase beginner plan"` to set flow name.
+- Evals and skill-creator integration (assertions, workspace, run steps) are in `evals/README.md`.

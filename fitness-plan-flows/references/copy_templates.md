@@ -1,29 +1,29 @@
-# 训练计划配套文案模板（句式库）
+# Training Plan Copy Templates (Phrase Library)
 
-## 购后交付「计划就绪」
+## Post-purchase "Plan ready"
 
-- 主题/钩子：你的 [产品名] 入门计划已就绪 / 7 天跟练计划来了
-- 正文结构：祝贺收货 → 计划说明（几天、练什么）→ 获取方式（链接/附件）→ 小贴士（阻力选择/频率）
-- CTA：查看 7 天计划 / 下载入门指南
+- Subject / hook: Your [product name] beginner plan is ready / Your 7-day follow-along plan is here
+- Body structure: Congrats on receiving → Plan overview (days, what you’ll do) → How to get it (link/attachment) → Tips (resistance choice / frequency)
+- CTA: View 7-day plan / Download beginner guide
 
-## 复购窗口「进阶/周计划」
+## Repurchase window "Advanced / weekly plan"
 
-- 主题/钩子：本周计划：用你的阻力带练全身 / 进阶第 X 周
-- 正文结构：本周重点（部位/目标）→ 计划概要 → 若需更强阻力/多一条可点链接
-- CTA：看本周计划 / 升级装备
+- Subject / hook: This week’s plan: full body with your resistance band / Advanced week X
+- Body structure: This week’s focus (area/goal) → Plan summary → Link if you need stronger resistance / extra band
+- CTA: See this week’s plan / Upgrade gear
 
-## 拉新/挑战
+## Acquisition / challenge
 
-- 主题/钩子：21 天阻力带挑战，免费参与 / 留资解锁 7 天计划
-- 正文结构：挑战规则与天数 → 你将得到什么（计划+社群/打卡）→ 参与方式
-- CTA：立即参与 / 解锁计划
+- Subject / hook: 21-day resistance band challenge, join free / Unlock 7-day plan when you sign up
+- Body structure: Challenge rules and duration → What you get (plan + community/check-in) → How to join
+- CTA: Join now / Unlock plan
 
-## 沉默唤醒
+## Win-back
 
-- 主题/钩子：新计划上线：X 分钟 [部位] 训练 / 好久不见，送你一份新计划
-- 正文结构：简短问候 → 新计划亮点 → 轻激励（可选）→ CTA
-- CTA：查看新计划 / 再练一次
+- Subject / hook: New plan: X-minute [body part] workout / We miss you—here’s a new plan
+- Body structure: Short greeting → New plan highlight → Light incentive (optional) → CTA
+- CTA: View new plan / Get moving again
 
-## 合规提醒
+## Compliance reminder
 
-- 计划均标注为「健身指导/运动建议」，不承诺减重/疗效；如有伤病请咨询医生。
+- Label all plans as "fitness guidance / exercise advice"; do not promise weight loss or therapeutic results; advise consulting a doctor for injuries or conditions.
