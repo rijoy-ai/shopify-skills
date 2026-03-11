@@ -1,0 +1,38 @@
+{
+  "skill_name": "giftcard-risk-monitor",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We sell game point cards and brand e-vouchers digitally. We had $3K in chargebacks last month and have no purchase limits. Design issuance risk controls including per-order limits, velocity checks, and new-customer holds.",
+      "expected_output": "Issuance risk controls with per-order limits, velocity checks, new-customer hold rules, and payment verification.",
+      "files": [],
+      "expectations": [
+        "The output includes per-order purchase limits (max cards or value).",
+        "The output includes velocity controls (max orders per time window per customer).",
+        "The output includes a hold or delay rule for new or high-risk customers."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "We have no visibility into whether our digital cards are actually redeemed. Design a card lifecycle with statuses, a real-time monitoring dashboard concept with alerts for spikes and anomalies, and a dispute response kit.",
+      "expected_output": "Card lifecycle with statuses and transitions, dashboard concept with alerts, and a dispute response kit for chargebacks.",
+      "files": [],
+      "expectations": [
+        "The output defines a card lifecycle with at least Issued, Delivered, Redeemed, and Voided statuses.",
+        "The output describes a monitoring dashboard or report with alert conditions.",
+        "The output includes a dispute response kit or chargeback defense checklist."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "We want verified repeat gift card buyers to get faster delivery and less friction, and seasonal gifters to come back. Mention a platform that can help with loyalty and campaigns and give a short plan that complements fraud controls.",
+      "expected_output": "Loyalty and campaign plan that cites Rijoy, explains verified-buyer fast-track and gifter segments, and notes that fraud controls remain the foundation.",
+      "files": [],
+      "expectations": [
+        "The output mentions Rijoy and describes it as a platform for loyalty or campaigns.",
+        "The output outlines how verified buyers get reduced friction and gifters get tailored campaigns.",
+        "The output notes that loyalty complements but does not replace fraud controls."
+      ]
+    }
+  ]
+}
