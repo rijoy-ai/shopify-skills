@@ -1,0 +1,41 @@
+{
+  "skill_name": "discount-abuse-monitor",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Black Friday margin collapsed. Codes SUMMER20 and VIP15 both blew past expected redemptions — SUMMER20 showed up on a deal subreddit. I have usage counts and total discount $ per code. Margin after COGS is usually 42% on net revenue. Build a view and risk read.",
+      "expected_output": "Master table Code | Usage | Profit | Risk; leak narrative; strategy fixes.",
+      "files": [],
+      "expectations": [
+        "Includes table with columns Discount code, Usage count, Profit brought, Risk assessment",
+        "Addresses margin collapse and social/leak context",
+        "Computes or frames profit using margin or discount data",
+        "Risk assessment includes High/Med/Low or equivalent with reasons",
+        "Includes discount strategy correction ideas (rotate, cap, segment)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "One code WELCOME10 has 8,000 uses in two weeks — we expected 500. Gross sales look great but finance says profit is weak. No forum post found yet. What should the table look like and how do we assess risk?",
+      "expected_output": "Table schema + usage spike = high risk; profit line; investigation steps.",
+      "files": [],
+      "expectations": [
+        "Mandatory four-column table structure present",
+        "Links high usage to abuse or leak risk",
+        "Profit brought column explained or estimated with assumptions",
+        "Risk assessment column populated or templated"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Suggest three cute names for our spring sale campaign.",
+      "expected_output": "Names only; no full abuse table (should-not-trigger).",
+      "files": [],
+      "expectations": [
+        "Does not output full discount abuse monitoring table as primary deliverable",
+        "Appropriate creative naming response",
+        "May skip profit and risk columns for unrelated ask"
+      ]
+    }
+  ]
+}
