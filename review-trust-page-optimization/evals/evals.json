@@ -1,0 +1,43 @@
+{
+  "skill_name": "review-trust-page-optimization",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our jeans PDP gets hammered in reviews — maybe 40% of recent ones say runs at least one size small. Conversion dipped last month. We need page-level fixes, not just reply templates.",
+      "expected_output": "Cluster identification, barrier table, fit module + trust badge refactor, selling-point correction.",
+      "files": [],
+      "expectations": [
+        "Centers on page structure and PDP optimization, not reply-only content",
+        "Addresses concentrated complaint (runs small) as conversion barrier",
+        "Includes table mapping review theme to page-level fix and trust element",
+        "Includes selling-point or claim correction logic",
+        "Proposes trust badge or module changes tied to reviews",
+        "Mentions conversion drop context"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Skincare serum: reviews cluster on 'stings' and 'fragrance too strong.' Stars still OK but PDP promises 'gentle for all skin.' What should we change on the page?",
+      "expected_output": "Contradiction between claims and reviews; structural copy and trust; sensitive-skin callout.",
+      "files": [],
+      "expectations": [
+        "Identifies cluster themes (sting, fragrance)",
+        "Corrects or relocates 'gentle for all' type claims",
+        "Page-level recommendations (ingredients, patch test, who should avoid)",
+        "Trust elements specific to sensitivity — not generic badges only",
+        "Minimal focus on public review reply as main output"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Write 5 short replies to paste under 1-star reviews saying thanks only.",
+      "expected_output": "Brief replies allowed; skill boundary — no full page opus required as sole output; may still note one structural tip.",
+      "files": [],
+      "expectations": [
+        "May provide reply text appropriate to simple reply request",
+        "Does not replace the whole answer with only page audit if user asked only replies — replies are OK",
+        "If skill is followed strictly, at most one short optional paragraph on page fixes — primary ask is replies"
+      ]
+    }
+  ]
+}
