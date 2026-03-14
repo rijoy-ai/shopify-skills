@@ -1,0 +1,43 @@
+{
+  "skill_name": "seo-traffic-conversion-audit",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We have three blog posts with huge organic traffic but GA4 shows basically zero purchases from those URLs. Topics are skincare routines and ingredient explainers. I want to know which are vanity and where to put products in the content.",
+      "expected_output": "Vanity table, path notes, per-post placement table with 3+ points each or aggregated.",
+      "files": [],
+      "expectations": [
+        "Frames high traffic vs zero conversion as vanity or fix list",
+        "Includes table contrasting traffic vs conversions",
+        "Identifies blog posts as candidates for product placement",
+        "Includes concrete product injection points (locations + CTA + target)",
+        "Covers keyword/query or landing relevance angle",
+        "Mentions purchase or conversion path from organic"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Where does our site rank for 'best vitamin c serum' — page 1 or 2?",
+      "expected_output": "Brief ranking answer; full audit template not required (should-not-trigger for deep conversion audit).",
+      "files": [],
+      "expectations": [
+        "May answer ranking question directly",
+        "Does not output full vanity-vs-productive audit and multi-post placement tables as mandatory primary output",
+        "Does not replace ranking answer with only conversion audit unless user asks",
+        "Optional one-line conversion note acceptable"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Single URL /blog/oily-skin-routine gets 50k sessions/month, $0 attributed revenue. Catalog has cleanser, toner, SPF. Give placement plan only.",
+      "expected_output": "Single post, 3+ placement rows, PDP/collection targets.",
+      "files": [],
+      "expectations": [
+        "At least three distinct product placement points with location and product tie-in",
+        "Links or targets to relevant SKUs or collections",
+        "Explicit high-traffic zero-conversion framing",
+        "English output appropriate to audit skill"
+      ]
+    }
+  ]
+}
