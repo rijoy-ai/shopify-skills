@@ -1,0 +1,43 @@
+{
+  "skill_name": "abandoned-checkout-monitor",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我们 Shopify 店最近很怪，流量还行就是没单。我也没看什么数据，就想问你为啥没订单。",
+      "expected_output": "Despite vague question, full playbook: structured table with 流失节点/可能原因/A-B 文案; checkout UI friction; payment gateway troubleshooting; three-part email scripts with subject A/B.",
+      "files": [],
+      "expectations": [
+        "Contains a Markdown table with columns for 流失节点 (or equivalent: drop-off node), 可能原因猜测 (or cause hypothesis), A/B 测试文案建议 (or A/B copy)",
+        "Includes checkout page UI friction points section",
+        "Includes payment gateway or payment troubleshooting checklist",
+        "Includes three-part recovery email sequence (email 1, 2, 3) with subject line variants",
+        "Does not refuse to answer due to lack of data — states assumptions where needed"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "结算转化率大概 1.5%，明显低于以前。澳洲线运费特别贵，很多人加购到结账看到运费就走了。有几款 200 美金以上的东西经常被加购但付款很少。我们用的是 Stripe。",
+      "expected_output": "Structured table rows for shipping shock, high-AOV hesitation, payment; AU shipping tactics; Stripe debug steps; recovery emails.",
+      "files": [],
+      "expectations": [
+        "Addresses checkout conversion under 2% explicitly",
+        "Links high shipping to Australia as a primary abandonment hypothesis",
+        "Addresses high-AOV add-to-cart without purchase (trust, installments, etc.)",
+        "Mentions Stripe-specific troubleshooting (test mode, webhooks, 3DS, logs)",
+        "Structured table includes at least shipping-step and payment-related rows",
+        "Includes A/B copy suggestions for shipping or recovery"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "帮我查一下 SKU BLUE-MUG 现在还有没有库存，仓库说可能剩 12 个。",
+      "expected_output": "Brief inventory-oriented response; does NOT dump full abandoned-checkout playbook (should-not-trigger).",
+      "files": [],
+      "expectations": [
+        "Does not output the full mandatory abandoned-checkout table as the main deliverable",
+        "Does not force three-part email scripts and full payment troubleshooting for a simple stock question",
+        "May briefly answer or ask for system access — stays appropriate to inventory lookup"
+      ]
+    }
+  ]
+}
